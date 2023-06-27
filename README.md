@@ -1,14 +1,17 @@
 # OneNext
  Add-on set of extra cores & options for Spectrum Next (ks1) / N-go
 
-A set of alternative cores and additional features from an edited NextZXOS menu configuration, it allows a selection of options from a customised default menu. This makes it possible to switch to any of the alternative machine/systems that can also run on the Spectrum Next, without having to select the core during boot up sequence. It resolves a deal of complexity for the average or casual user, the objective is to have a set of additional features, available on just one SD card, with options selectable from a customised NextZXOS menu which is already pre-configured (no SD card swapping, or having to use multiple SD cards).
+A set of alternative cores and additional features from an edited NextZXOS menu configuration, it allows a selection of options from a customised default menu. This makes it possible to switch to a few extra machine/systems that can also run on the Spectrum Next and N-go FPGA, without having to select the core during boot up sequence. It resolves a deal of complexity for the average or casual user, the objective is to have additional features, available on just one SD card, with options selectable from a customised NextZXOS menu and already pre-configured (no SD card swapping, or having to use multiple SD cards).
 
-Please be aware this is NOT an official add-on package from the Spectrum Next distribution; this project wants to demonstrate some of the many features available for the Spectrum Next, and provide an easy access set-up. 
-It is intended mainly for evaluation purposes, the hope is that it would make it easier to appreciate and implement additional open-source features created by Spectrum Next developers (FPGA cores/programs/tools), as well as to incourage more people to explore and learn about Spectrum Next development.
+Please be aware this is NOT an official Spectrum Next add-on package and in any way associated with SpecNext Ltd, supported by the Spectrum Next official distribution, or endorsed by Spectrum Next team. 
+This project is solely inteded to demonstrate implementation of some of the many features available for the Spectrum Next, made by third parties, and provide easy access set-up. 
+It is mainly for evaluation purposes, with the hope that it would make it easier to explore additional open-source features created by developers (FPGA cores/programs/tools), as well as to incourage more people to explore and learn about Spectrum Next development in general.
 
-The NextZXOS menu is edited with the excellent editor zxnext-menuedit by em00k, David Saphier. 
+The NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier
 
-The extra machines are from the following work and projects:
+Anyone can learn how to use this amazing tool and customize the default NextZXOS, there is also a great tutorial on the YouTube channel 'Spectrum Next Stuff' https://www.youtube.com/watch?v=khba0wV743Q&t=6s
+
+The extra machines are implemented from the following list of work and projects:
 
 -SAM COUPE by ManuFehri, based on McLeod's SAM coupe core
 
@@ -38,7 +41,7 @@ Additional features selectable from NextZXOS menu are:
 
 -CalmCommander, file commander by perrada69, Miroslav Bursa
 
-Additional options from ZX Spectrum Next configuration (personalities), selectable at boot up time by pressing key 'space', are experimental for evaluation or educational purposes. Copyrights are the of respective entities, Sky has kindly given its permission for the redistribution of its copyrighted material (ROMs) but retains that copyright. 
+Additional options from ZX Spectrum Next configuration (personalities), selectable at boot up time by pressing key 'space', are experimental for evaluation or educational purposes. Copyrights belong to respective entities, Sky has kindly given its permission for the redistribution of its copyrighted material (ROMs) but retains that copyright. 
 
 -ZX Spectrum 128k with DivMMC (supported by esxDOS 0.8.7 by Papaya Dezign)
 
@@ -49,50 +52,59 @@ IMPORTANT
 All credits go exclusively to the original authors of such ports, utilities and tools.
 
 OneNext add capabilities and thus implement some of the many great developments made over recent years for the Specrtum Next. Licences, original source code, references and links are all included on this repository. 
-You are incouraged to learn about the extensive work of the original creators by checking their main repositories, learning about other amazing projects, or visiting their web sites. Please read the credits, licence information, and all relevant documentation on this repository.
+You are incouraged to learn about the extensive work of the creators by checking their main repositories, learning about other amazing projects, or visiting their web sites. Please read the credits, licence information, and all relevant documentation on this repository.
 
-Disclaimer: Under terms of respective GNU/CC0/Apache/MIT Licence. No liability or warrants are attributed to, implied or derived from this software. Use of the resources available from this repository is exclusively at your own risk. Please proceed only if you are confident in your abilities and understanding of the project.
+Disclaimer: Under terms of respective GNU/CC0/Apache/MIT Licence. No liability or warrants are attributed to, implied or derived from this software. Use of resources on this repository is for educational purposes, exclusively at your own risk. Please proceed only if you are confident in your abilities, understanding of the project and accept the terms herein.
 
 REQUIREMENTS
 
-This repository is for the SPECTRUM NEXT (ks1) and the fantastic N-GO, a (improved) clone of Spectrum Next (Issue 2F) by ManuFehri, authorized by the Spectrum Next team. Those boards are use a FPGA Xilinx XC6SLX16. 
-The sofware has not been tested yet on the new N-mini, a Raspberry PI-sized Next board by Don Superfo but, in theory, it should work. 
+This repository is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a (improved) clone of Spectrum Next (Issue 2F) by ManuFehri, authorized by the Spectrum Next team https://manuferhi.com/p/n-go-board
+Those boards use a FPGA Xilinx XC6SLX16.
+
+The extra cores will not work on the new Spectrum Next Kickstarter 2 (ks2), as its FPGA on board is different. 
+Hopefully, third party developers or the Spectrum Next team will look into developing new extra cores and adapting the existing ones for the Spectrum Next Kickstarter 2.
+
+The sofware in this repository has not been tested yet on the new N-mini, a Raspberry PI-sized Next board by Don Superfo.
 
 1) A VGA MONITOR/TV with (PAL) 50Hz, and a VGA display lead to connect it.
    
-Check your VGA monitor/TV boot menu to see if you can adjust settings, and output centred on your screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Micro) can also be displayed in RGB, only the BBC Micro core supports digital display (HDMI/DVI). 
-A VGA monitor is therefore ideal for the extra cores, it can be obtained very inexpensively these days and a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA (mode 0) is the most timing-accurate display for the Spectrum Next, as it is fully compatible with older ZX Spectrum software. 
+Check your VGA monitor/TV boot menu to see if you can adjust settings, and output centred on your screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Micro) can also be displayed in RGB, only the BBC Micro core supports digital display (HDMI/DVI)
+
+A VGA monitor is therefore ideal for the extra cores, it can be obtained very inexpensively these days, and a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA (50hz, mode 0) is the most timing-accurate display for the Spectrum Next, as it is fully compatible with older ZX Spectrum software. 
 
 Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by pressing key 'V' at start up, and select 'mode 0' whenever possible. For more information, refer to Sinclair ZX Spectrum Next User Manual, 'Chapter 1 - Setting it UP', also available online at 
 https://www.specnext.com/zx-spectrum-next-user-manual-first-edition/
 
 3) SPEAKERS
     
-If your VGA monitor does not have audio output or built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, getting a simple set of speakers is quite inexpensive, in fact you may have a set already.
-Consider also a good amplified sound system/speakers to enjoy the fantastic sound capabilities of Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), Covox/Soundrive/SpecDrum/TurboSound digital audio. 
+If your VGA monitor does not have audio output or built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, getting a simple set of speakers is quite inexpensive, probably you have a set of speakers already that can be used.
+Consider also getting a good amplified sound system/speakers to enjoy the fantastic sound capabilities of Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), Covox/Soundrive/SpecDrum/TurboSound digital audio.
+
 Additionally, software NextSIDPlayer and NXMODPlayer by the legendary David Saphier let you play PT3 and Amiga MOD files, while NextPlayer by Miroslav Bursa let you play STC, PT2, PT3, SQT and TS (TurboSound) music!
 
 2) A PS/2 KEYBOARD
    
-The open source cores that make it possible to recreate other machines on the Spectrum Next tend to be supporting PS/2 keyboard, VGA, and 3.5mm audio because that's what they were developed for. The PS/2 is effectively the way to use other machines, as it provides more keys than most source keyboards; for expample, although the BBC Micro core has support for the Spectrum Next keyboard (a great achievement!), using it may feel somehow awkward for the layout is so different.
+The open source cores that make it possible to recreate other machines on the Spectrum Next tend to be supporting PS/2 keyboard, VGA, and 3.5mm audio because that's what they were developed for. A PS/2 keyboard is the way to use other machines, as it provides more keys than most source keyboards; for expample, although the BBC Micro core has support for the Spectrum Next keyboard (a great achievement!), it may feel somehow awkward because the layout is so different.
 
 OPTIONAL (reccommended): PS/2 splitter cable and a PS/2 Mouse, as few sofware require a mouse. 
 
-4) A newly-formatted SD CARD (preferably 4gb)
+4) A NEWLY FAT16 FORMATTED 4GB SD CARD
 
 Whether you have a Spectrum Next (ks1) or N-go, you will need to format a new SD card to FAT16 (not FAT32).
-Please do NOT use your old or ordinary Next SD card, you should obtain a new SD card specifically for this. 
-A few alternative cores only work with cards up to 4gb, therefore, if you have a lager-sized SD card, you must create a FAT16 4gb primary partition, or even better split the SD card size into multiple partitions (as explained herewith in the following section, marked OPTIONAL). 
+Please do NOT re-use your old or ordinary Next SD card, you should definitely obtain a new SD card specifically for this. A few extra cores only work with cards up to 4gb maximum, therefore, if you have a lager size SD card, you must create on it a FAT16 4gb primary partition, or even better split the SD card size into multiple partitions (as explained in the following section, marked OPTIONAL). 
 
-OPTIONAL (recommended): It is possible to have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning the new SD card this way: 
+OPTIONAL (recommended): You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning the new SD card in this way: 
 
 1st 4gb partition in FAT16, 
 
 2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is)
 
-IMPORTANT: ALL partitions must be PRIMARY, and only the first 4gb partition must be formatted in FAT16, the subsequent partitions (2nd, 3rd..) must be formatted in FAT32. NextZXOS will show multiple logical drives, C,D,E,F..
+Fore example, for a 32gb SD card: first 4gb FAT16 partition, second 10gb FAT32 partition, third 10gb FAT32 partition, fourth 8gb FAT32 partition; NextZXOS will show 4 logical drives C, D, E, F
+
+IMPORTANT: ALL partitions must be PRIMARY, and only the first 4gb partition must be formatted in FAT16, the subsequent partitions (2nd, 3rd..) must be formatted in FAT32. 
 
 Games for the extra systems and consoles, must be kept on the first NextZXOS C drive (FAT16, 1st SD partion) in their respectives folders SAM, CPC, MSX, NES, COLECO, ATARI, where you can place your own games/roms. 
+
 Anything else, ZX Spectrum legacy or Next files, can go on other drives (D,E,F..) 
 If you wish to keep all your files neatly, it could be, for example: the whole ZX Spectrum TOSEC library in drive D, Next games in drive E, music files or your own programs in drive F..
 
@@ -105,7 +117,8 @@ INSTRUCTIONS
 1) Download the latest stable complete System/Next distribution, the FULL distribution download sn-complete-22.10a.zip (recommended) SYSTEM/NEXT 22.10 at https://www.specnext.com/latestdistro
 
 Navigate to the place you downloaded the distribution and double-click it to unzip. Select ALL files in the distribution and copy them to the root folder of your newly FAT16 formatted SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as marked optional in REQUIREMENTS above)
-At this stage you can check your stock official NextZXOS distribution by inserting the new SD card, before proceeding to the next step.
+
+At this stage you can check your stock official NextZXOS distribution by inserting the new SD card, before proceeding to the next step. A 'Screen Test' will be enabled at your first start up.
 
 IMPORTANT: You need at least core v3.01.10 
 Please read the instructions carefully at the link above for SYSTEM/NEXT 22.10 
@@ -139,7 +152,7 @@ You will need to flash all the etxra cores on this release, one by one, and ensu
 
 When you have finished flashing all of the extra cores, switch off and restart your Spectrum Next in normal Next personality. Please chech 'Quick Start' for more information on how to use each of the extra cores. 
 
-Now, you can start using the extra systems and consoles, enjoy music players, switch off WiFi, or manage files with CalmCommander.. all from your NextZXOS menu!
+Now, you can start using the extra systems and consoles, enjoy music players, switch off WiFi, or manage files.. all from your NextZXOS menu!
 
 
 
