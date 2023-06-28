@@ -72,13 +72,13 @@ Once you have a VGA monitor connected, please check your VGA display frequencies
 
 For more information, refer to the Sinclair ZX Spectrum Next User Manual, 'Chapter 1: Setting it UP', also available online at https://www.specnext.com/zx-spectrum-next-user-manual-first-edition/ 
  
-3) SPEAKERS 
+2) SPEAKERS 
  
 If your VGA monitor does not have audio output or built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, getting a simple set of speakers is quite inexpensive, probably you already have a set of speakers that can be used. Consider also getting a good amplified stereo sound system or speakers to enjoy the awesome sound of the Spectrum Next, NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio. 
  
 Additionally, software like NextSIDPlayer and NXMODPlayer by the legendary David Saphier let you play PT3 and Amiga MOD files, while NextPlayer by Miroslav Bursa lets you play STC, PT2, PT3, SQT and TS (TurboSound) music files! 
  
-2) PS/2 KEYBOARD 
+3) PS/2 KEYBOARD 
  
 The open source cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA, and 3.5mm audio because that's what they were developed for. As with other FPGA builds, a PS/2 keyboard is the way to use the recreated machines, for it provides more keys than most source keyboards; for example, although the Acorn BBC Master core has support for the Spectrum Next keyboard (a great achievement!), it may feel somehow difficult to use because the layout is so different. 
  
@@ -126,11 +126,11 @@ Please read the instructions carefully at the link above for SYSTEM/NEXT 22.10
 Also, you may notice the section 'Note for PS/2 keyboard users' on the same official release page. 
 As extra cores require an external PS/2 keyboard, that feature needs to be enabled, as opposed to having only a default mouse (you can still use a mouse AND a keyboard with a PS/2 splitter cable). However, no action is really required for enabling a PS/2 keyboard at this stage because, after you complete the next step (3), it will be automatically configured. 
 
-3) Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your FAT16 primary partition on the SD card, where you have already placed the System/Next distribution from step 4. If you get the prompt on your PC screen "The destination already has a file named '....'", click 'yes' to "Replace the file in the destination" for each or all files. 
+2) Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 1). If you get the prompt on your PC screen "The destination already has a file named '....'", click 'yes' to "Replace the file in the destination" for each or all files. 
 
 IMPORTANT: The software in this repository does NOT alter, replace, or corrupt the official Spectrum Next firmware or its code in any way; in fact, resources, files and additional folders are simply added, configured, and made accessible with the relevant settings. 
 
-4) Now, you can insert the newly configured SD card in your Spectrum Next or N-go. 
+3) Now, you can insert the newly configured SD card in your Spectrum Next or N-go. 
 
 The SD card set-up is finally complete; however, you still need to FLASH the alternative cores to your FPGA on the Spectrum Next! 
  
