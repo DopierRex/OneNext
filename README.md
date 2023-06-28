@@ -114,8 +114,8 @@ Please choose the tool you are comfortable with or do your own research for a su
  
 INSTRUCTIONS 
 
-1) The resources on this repository do NOT include the official System/Next distribution, therefore: 
-Download the latest stable complete System/Next distribution, the FULL distribution download sn-complete-22.10a.zip (recommended) SYSTEM/NEXT 22.10 at https://www.specnext.com/latestdistro 
+1) The resources on this repository do NOT include the official System/Next distribution, therefore:
+    Download the latest stable complete System/Next distribution, the FULL distribution download sn-complete-22.10a.zip (recommended) SYSTEM/NEXT 22.10 at https://www.specnext.com/latestdistro 
  
 Navigate to the place where you downloaded the distribution and double-click it to unzip. Select ALL files in the distribution and copy them to the root folder of your newly formatted FAT16 SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as marked optional in REQUIREMENTS above). 
  
@@ -148,12 +148,18 @@ Once you select an empty slot and press 'space', the list of extra cores will ap
  
 You will need to flash all the etxra cores on this release, one by one, and ensure they are named as listed hereunder. The slot number doesn't matter though; a core can be flashed to any of the available FPGA slots, from 08 to 31. 
 
-Acorn BBC Master 
-AMSTRAD1 
-ATARI_26 
-COLECOVI 
+Acorn BBC Master
+
+AMSTRAD1
+
+ATARI_26
+
+COLECOVI
+
 MSX_128K 
+
 NES_GAME 
+
 SAMCOUPE 
  
 When you have finished flashing all of the extra cores, restart your Spectrum Next in normal Next personality. 
