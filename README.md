@@ -5,7 +5,8 @@ A set of alternative cores and additional features from edited NextZXOS menu, it
 
 This resolves a deal of complexity for the average or casual user, the objective is to have pre-configured features and cores on just one SD card, with options executable from the NextZXOS menu (no SD card swapping, or having to use multiple SD cards). 
  
-Please be aware it is NOT an official Spectrum Next add-on package, and it is not in any way associated with SpecNext Ltd, supported by the Spectrum Next official distribution, or endorsed by the Spectrum Next team. This project is intended to demonstrate the implementation of open-source features available for the Spectrum Next, made by third parties, and provide an easy setup. It is mainly for evaluation and educational purposes, with the hope that it will encourage more people to explore Spectrum Next-related projects. 
+Please be aware this is NOT an official Spectrum Next add-on package, and it is not in any way associated with SpecNext Ltd, supported by the Spectrum Next official distribution, or endorsed by the Spectrum Next team. 
+The project is intended to demonstrate the implementation of open-source features available for the Spectrum Next, made by third parties, and provide an easy setup. It is mainly for evaluation purposes, with the hope that it will encourage more people to explore Spectrum Next-related projects. 
  
 The NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier 
 Anyone can learn how to use this amazing tool and customise the default NextZXOS. 
@@ -145,7 +146,7 @@ There are up to 14 FPGA slots available, listed vertically from numbers 18 to 31
  
 Once you select an empty slot and press 'space', the list of extra cores will appear on the screen. Select any of the available cores and press 'enter' to flash it. Once a core is flashed to a slot, it will no longer show on the list of cores that can be flashed (unless you erase it first). It is actually a simple process; flashing a core takes just a few seconds.  
  
-You will need to flash all the etxra cores on this release, one by one, and ensure they are named exactly as listed hereunder. The slot number doesn't matter though; a core can be flashed to any of the available FPGA slots, from 08 to 31. 
+You will need to flash all the etxra cores on this release, one by one, and ensure they are named as listed hereunder. The slot number doesn't matter though; a core can be flashed to any of the available FPGA slots, from 08 to 31. 
 
 Acorn BBC Master 
 AMSTRAD1 
