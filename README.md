@@ -132,7 +132,6 @@ As extra cores require an external PS/2 keyboard, that feature needs to be enabl
 IMPORTANT: The software in this repository does NOT alter, replace, or corrupt the official Spectrum Next firmware or its code in any way; in fact, resources, files and additional folders are simply added, configured, and made accessible with the relevant settings. 
 
 3) Now, you can insert the newly configured SD card in your Spectrum Next or N-go. 
-
 The SD card set-up is finally complete; however, you still need to FLASH the alternative cores to your FPGA on the Spectrum Next! 
  
 At this stage, if you haven't already, you can start using a VGA monitor with your Next/N-go.  
