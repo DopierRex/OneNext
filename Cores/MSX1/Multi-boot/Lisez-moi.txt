@@ -1,0 +1,25 @@
+----------------------------------------
+Exemples de fichiers batch pour MSX-DOS2
+----------------------------------------
+
+Si vous souhaitez utiliser certains de ces fichiers batch, copiez-les à la
+racine du disque de démarrage.
+
+
+DOS.BAT est pour MSX-DOS (qui doit être installé à la racine du disque).
+
+M.BAT est pour le gestionnaire de fichiers M (qui doit être installé dans le
+      dossier /M).
+
+MC.BAT est pour MSX Commander (qui doit être installé dans le dossier /MC).
+
+MM.BAT est pour Multimente (qui doit être installé dans le dossier /MM).
+
+REBOOT.BAT est pour CALL SYSTEM sans paramètre.
+
+SR.BAT est pour Sofarun (qui doit être installé dans le dossier /SOFARUN).
+
+XCC.BAT est pour XelaSoft Control Center (qui doit être installé dans
+        le dossier le /XCC)
+
+Changez les chemins et retirez les rem en fonction de votre configuration.

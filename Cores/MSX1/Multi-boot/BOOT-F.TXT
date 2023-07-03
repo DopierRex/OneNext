@@ -1,0 +1,17 @@
+ BOOT.BAS est un programme en BASIC pour sélectionner manuellement le
+ gestionnaire de fichiers ou autre programme vous souhaitez exécuter au
+ démarrage selon votre choix.
+
+ Vous pouvez paramétrer jusqu'à 10 programmes. La mise en page est automatique.
+ Il s'adapte à votre génération de MSX et la largeur de l'écran actuelle.
+ Les programmes compatible MSX1 seulement peuvent être configurées pour ne pas
+ s'afficher lorsque le disque démarre sur MSX.
+ BOOT.BAS est compatible avec le DOS1, DOS2 et Nextor.
+
+ Il vous suffit de modifier les lignes DATA en bas du programme avant la
+ ligne "380 DATA 255,," pour ajouter ou supprimer un élément.
+ La valeur après l'instruction DATA doit être 0  pour les programmes
+ MSX1 seulement, 1 pour MSX2 ou plus récent.
+
+ La sélection se fait au clavier avec les touches de 0 à 9, les touches curseur
+ et espace/retour, ou le joystick.

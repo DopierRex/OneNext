@@ -1,0 +1,5 @@
+rem set expert=on
+path=A:\ A:\ASM A:\COMPRESS A:\SOUND A:\TEXT A:\TOOLS A:\DOS A:\GRAPHIC A:\SOFARUN
+set TIME=24
+rem set HELP=\HELP-F
+SR.COM /S

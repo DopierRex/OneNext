@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Documentacao\Eletronica\FPGA\ZX Spectrum Next Cores\Sources\MSX1\synth\ZX Spectrum Next\ZX_Spectrum_Next_top.ncd
+OUTFILE=D:\Documentacao\Eletronica\FPGA\ZX Spectrum Next Cores\Sources\MSX1\synth\ZX Spectrum Next\ZX_Spectrum_Next_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=D:\Documentacao\Eletronica\FPGA\ZX Spectrum Next Cores\Sources\MSX1\synth\ZX Spectrum Next
+LICENSE=WebPack
+USER_INFO=206335900_0_0_917

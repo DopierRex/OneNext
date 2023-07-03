@@ -1,0 +1,7 @@
+rem set expert=on
+if %_MSXVER%==MSX EXIT 0
+path=A:\ A:\ASM A:\COMPRESS A:\SOUND A:\TEXT A:\TOOLS A:\DOS A:\GRAPHIC A:\MM
+rem set FONT0808=\FONT\FRENCH.FNT
+set TIME=24
+rem set HELP=\HELP-F
+MM.COM

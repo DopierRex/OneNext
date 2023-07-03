@@ -1,0 +1,42 @@
+------------------------------------------------------
+-                                                    -
+- Ported to to ZX Spectrum Next / N-GO by ManuFerHi  -
+-                                                    -
+------------------------------------------------------
+
+MGT SAM Coupe - Based on McLeod's SAM coupe core
+
+IMPORTANT - if you don't see anything on the screen press the Scroll-Lock key to switch between 15 and 31khz
+
+Keys
+----
+- F12 - disk menu
+- F5 - NMI button
+- F1 - toggle joystick splitter setting
+- CTRL-ALT-DEL - reset SAM
+- CTRL-ALT-Backspace - reset to BIOS.
+- SCROLL-LOCK - switch from VGA to RGB and back.
+- (numeric keypad [-]) - switch on/off scanlines
+
+
+F12 for load image disk, then type BOOT 
+
+Disk image support
+------------------
+Only MGT and CPM format is supported. There is no support for copy protected disks with odd formats at present, unless 
+cracked versions.  
+
+To convert disks use Simon Owen's excellent SAMdisk utility available here: https://simonowen.com/samdisk/
+
+2nd drive support
+-----------------
+SAMDOS stores the drive configuration along with the DOS on the disk and inherits the settings from the dos it loads.
+Since not all SAMs had a 2nd drive, then if you boot a SAMDOS that was saved on a machine with only 1 drive, when you
+try to DIR 2, then you will receive the message: "103 No such drive, 0:1".  To get around this, and to enable the
+second drive after booting SAMDOS, you can enable the drive with the simple command:
+- POKE DVAR 2, 208
+
+If you resave the SAMDOS onto the disk, then it will save the setting and next time you boot that disk it will remember
+that you had 2 drives configured.  This shouldn't affect PRODOS (CPM).
+
+ALL CREDITS TO AUTHORS

@@ -1,0 +1,235 @@
+-----------------------------------------------------------
+-                                                         -
+- Ported to ZX Spectrum Next by hoglet67, David Banks     -
+-                                                         -
+- BBC Master core, using Alan Daly's 65C02 implementation -
+-                                                         -
+-----------------------------------------------------------
+
+WORKS WITH SPECTRUM NEXT AND PS/2 KEYBOARDs, ATARI STANDARD JOYSTICK, VGA/RGB/HDMI VIDEO 50Hz
+
+KEYBOARDS
+
+ZX SPECTRUM NEXT KEYBOARD
+Membrane Keyboard Mapping
+
+The mapping is as follows:
+
+Spec Next Key	     BBC Key
+
+BREAK	             BREAK
+EDIT	             ESCAPE
+TRUE VIDEO	     TAB
+INV VIDEO	     COPY
+CAPS LOCK	     CAPS LOCK
+GRAPH	             CTRL
+CAPS SHIFT	     SHIFT
+EXTEND	             See below
+SYMBOL SHIFT	     See below
+DELETE	             DELETE
+ENTER	             RETURN
+Up/Down/Left/Right   Up/Down/Left/Right
+A-Z	             A-Z
+0-9	             0-9
+;	             ; and +
+"	             : and *
+,	             , and <
+.	             . and >
+
+This misses out the following BBC Master keys:
+
+@
+‐ and =
+^ and ~
+/ and |
+[ and {
+] and }
+_ and £
+/ and ?
+
+To access these, it's necessary to use the Spec Next SYMBOL SHIFT as a modifier, which operates exactly as it does in the Spec Next core. 
+For example, SYMBOL SHIFT + L should give you =. i.e. just look for the key cap with the symbol character you need.
+
+The EXTEND key is also used as a modifier to access the 10 red BBC function keys. For example, F1 is Extend + 1.
+
+Finally, on the Membrane keyboard, the yellow NMI button in conjunction with a number key (0-9) selects a particular config key. 
+For example, Config-1 is bound to Yellow NMI + 1.
+
+See Basic Operation for a description of the config keys.
+
+PS/2 KEYBOARD 
+
+The PS/2 Keyboard mapping is the same as other Beeb Fpga implementations, and attempts to map keys by physical position.
+
+For example, the Beeb ; key is next to L, and the Beeb : key is just to the right of that, just like they are on a real Beeb keyboard.
+
+This can be confusing at first, but it gives a better experience when playing games (most of the time!)
+
+On the PS/2 keyboard, Ctrl-Alt with a function key (F1..F10) selects a particular config key. For example, Config-1 is bound to Ctrl-Alt-F1. 
+As there is no F0, Config-0 is bound to Ctrl-Alt-F10.
+
+See Basic Operation for a description of the config keys.
+
+Other notable BBC Master keys are:
+
+PS/2 Key	BBC Key
+
+F12	        BREAK
+Esc	        ESCAPE
+End	        COPY
+Backspace	DELETE
+
+
+COMMANDS
+
+DBOOT
+Syntax: DBOOT <dno>/<dsp>
+
+Inserts specified disk into drive 0 and boots it (if boot option of disk set).
+
+Example:
+
+>*DBOOT Planetoid
+DCAT
+Syntax: DCAT ((<from dno>) <to dno>) (<adsp>)
+
+Lists disks in disk number order.
+
+An optional disk number range and/or ambiguous disk title can be specified.
+
+Example:
+
+>*DCAT 10 20 R*
+ 12 Reversi P 13 Revs5Track P
+ 19 Repton3 P
+3 discs found
+This displays all (formatted) disks with numbers in the range 10 to 20 whose disk title begins with “R” or “r”.
+
+Note: “P” after the disk title indicates that the disk is locked (read-only), and the number of disks found matching any specification 
+is given at the bottom of the list.
+
+DDRIVE
+Syntax: DDRIVE (<drive>)
+
+Lists the drives and which disks are currently “inserted”, plus their status.
+
+Example:
+
+>*DDRIVE
+0: 253               U
+1:   1 RAINBOW
+2:   2 FROGGER
+3:   3 PHOENIX       P 
+DFREE
+Syntax: DFREE
+
+Displays the number of unformatted disks, and the total number of formatted and unformatted disks.
+
+Example:
+
+>*DFREE
+121 of 511 disks free (unformatted)
+>
+DIN
+Syntax: DIN (<drive>) <dno>/<dsp>
+
+Insert specified disk into drive.
+
+If the drive number is omitted, the current drive is used.
+
+Example:
+
+>*DIN 0 REVS
+Note: A disk cannot be in more than one drive at a time. E.g. if Disk 200 is in Drive 0, and the user enters *DIN 2 200, Disk 200 will then be in Drive 2, and “No Disk” will be in Drive 0.
+
+DOP P
+Syntax: DOP P (<drive>)
+
+Protects (locks) the disk in a drive so that it is read-only.
+
+If the drive number is omitted, the current drive is used.
+
+Example:
+
+>*DOP P 0
+DOP U
+Syntax: DOP U (<drive>)
+
+Unprotects (unlocks) the disk in a drive so that it can be written to.
+
+If the drive number is omitted, the current drive is used.
+
+Example:
+
+>*DOP U 0
+DOP K
+Syntax: DOP K (<drive>)
+
+Marks the disk in a drive as unformatted.
+
+Unless *ENABLE is used before this command, the user is asked for additional confirmation (i.e. twice)
+
+If the drive number is omitted, the current drive is used.
+
+Example:
+
+>*DIN 0 498
+>*ENABLE
+>*DOP K 0
+Kill 498  ADFS : Y
+>*CAT
+
+Disc not formatted
+>
+NB: This command does not change any data on the disk “surface” and can be undone using *DOP R.
+
+DOP R
+Syntax: DOP R (<drive>)
+
+Marks a previously unformatted disk as in the drive as formatted.
+
+If the drive number is omitted, the current drive is used.
+
+Example:
+
+>*DIN 0 498
+>*CAT
+
+Disc not formatted
+>*DOP R 0
+>*CAT
+ADFS (498)
+Drive 0           Option 0 (off)
+Dir. :0.$         Lib. :3.$
+
+    IDE              IDE2
+    ORIG             SD
+>
+DOP N
+Syntax: DOP N (<drive>)
+
+Finds the first unformatted disk and places it in specified drive.
+
+Note, the disk must then be formatted in the usual way.
+
+Example:
+
+>*DOP N
+Disk 253 in drive :0
+>*CAT
+
+Disc not formatted
+>*FORM 80 0
+Go (Y/N) ? Y
+Formatting drive 0 track 4F
+>*CAT
+ (253)
+Drive 0           Option 0 (off)
+Dir. :0.$         Lib. :3.$
+
+DRECAT
+Syntax: DRECAT
+
+Rebuilds the “Disk Table”. The disk table contains a copy of the disk title, plus the disk status (read-only, read/write, unformatted or invalid).
+
+The title in the disk table is updated when *TITLE is used, or a (new) disk is formatted using *DOP N. However, copying a disk using *BACKUP etc. will not update the “Disk Table”. In this case *DRECAT can be used to refresh the disk table.

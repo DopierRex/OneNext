@@ -1,0 +1,252 @@
+	--------------------------
+	Pilote pour FAT16 ver 0.12
+	--------------------------
+
+
+1. Le pilote FAT16
+
+   Ce pilote permet au MSX-DOS 2 de gérer les disques formatés en FAT16.
+   (Compatible avec le MSX-DOS 2 ver2.2x/ver2.3x)
+ 
+   Le système FAT16 supporte des disques ou partitions jusqu'à 2GB.
+   Des utilitaires spécifiques à votre interface de disque seront
+   nécessaires pour formater et monter les disques ou partitions FAT16.
+
+   - Ceux de l'interface ATA-IDE ou CF, allez sur le site de Sunrise.
+   - Pour la Mega-SCSI, utilisez la commande CP16.COM.
+   
+
+2. Utilisation
+
+   Entrez la commande suivante sous MSX-DOS 2 pour exécuter FAT16.COM.
+
+    FAT16 [/R][/D][/H]
+
+   Paramètres:
+ 	
+	/R - Retirer le pilote FAT16.
+	     Effectue une copie du noyau du DOS2 à partir de la Disk-ROM
+	     du Slot maitre.
+	/D - Afficher le type de FAT utilisé pour chaque disque.
+	      FAT12 = FAT sur 12 bits
+	      FAT16 = FAT sur 16 bits
+	/H - Afficher l'aide.
+   
+   Le pilote FAT16 est installé lorsqu'aucun paramètre n'est spécifié.	     
+
+   Attention : Avant d'installer/retirer le pilote FAT16, veuillez absolument
+               fermer les fichiers ouverts (plus de 4 fichiers manipulés) avec
+               le bloc descripteur de fichiers (File Interface Block) car
+               le pilote FAT16 étend le FIB en interne.
+
+
+3. La commande COMMAND2.COM
+
+  -  La commande DIR n'affiche pas correctement la mémoire libre des disques
+    FAT16. Ceci est causé par une routine du COMMAND2.COM qui calcule seulement
+    sur 16 bit. PATCHCOM.COM sert à appliquer un patch au COMMAND2.COM pour
+    que le calcul se fasse sur 24 bits.
+
+    Application du patch :
+    Copier les fichiers PATCHCOM.COM et COMMAND2.COM dans un dossier,
+    ouvrez ce dossier et entrer la commande suivante sous MSX-DOS2.
+	
+	>PATCHCOM 
+
+    Ces patches peuvent être appliqués sur le COMMAND2.COM v2.20, v2.30 ou
+    v2.31. Ensuite copiez le COMMAND2.COM patché à la racine du disque de Boot
+    puis redémarrez le MSX.
+    
+    Il y existe une autre commande appelée COMPATCH.COM pour appliquer ce
+    patch jusqu'à la v2.41 (versions faites par TNI).
+    
+    Ces patches ne sont plus nécessaires pour les versions suivantes. 
+
+
+4. Comment utiliser MultiMente (développé par MOGU)
+
+   Pour que MM affiche correctement les dossiers d'une partition FAT16,
+   veuillez lui appliquer un des patches suivants.
+
+   - MMPATCH.COM sert à appliquer le patch à MM v2.07A.
+   - MMKPATCH.COM sert à appliquer le patch à MM v2.07K.
+
+
+5. Les messages d'erreur
+
+  - option error
+	Il y a une erreur de paramètre.
+
+  - unknown kernel
+	Le noyau du MSX-DOS 2 n'est pas reconnu mais il est compatible v2.2x et
+	v2.3x. Veuillez me contacter si cette erreur se produit.
+
+
+6. Gestion interne du MSX-DOS 2 lorsque le pilote FAT16 est installé
+
+  - Les secteurs d'une FAT12 ou FAT16 sont gérés sur 24 bits et
+    celle de la FAT sur 16 bits.
+ 
+  - Le type de système de fichiers est écrit dans le secteur de boot. Celui-ci
+    est lu et si le texte "FAT16" est trouvé, le disque sera géré en FAT16.
+    La FAT sera écrite et lue sur 16 bits et les bits 16~22 du numéro de secteur
+    devront être spécifiés dans le registre C lors d'un appel à DSKIO.
+
+    Les bits 16~23 du numéro de secteur des fonctions 2Fh et 30h du DOS sont
+    mis à 0, donc un accès direct aux secteurs n'est possible qu'entre 0 et
+    FFFFh.
+ 
+  - S'il n'y a pas le texte "FAT16" dans le secteur de boot, le disque sera
+    géré en FAT12. La FAT sera écrit et lu sur 12 bits, l'identifiant du média
+    sera spécifié par le registre C lors de l'appel de DSKIO.
+ 
+  - Le bloc descripteur des fichiers (File Interface Block) dans le segment
+    de données prend maximum 2 octets pour la FAT12 et la FAT16.
+    Les numéros du premier cluster d'un fichier, les numéros de cluster des
+    dossiers, et autres informations sont sauvegardés dans le bloc
+    descripteur des fichiers (File Interface Block).
+
+    Le pilote FAT16 étend le FIB pour sauvegarder les bits 16~23 du numéro
+    de secteur des dossiers. L'utilisation du FIB est la façon qui me semble
+    la plus sûre d'accéder à la FAT16.
+ 
+  - Pour l'obtention des paramètres avec la fonction 31h, l'emplacement de
+    stockage des données est légèrement différente sur un disque FAT16.
+
+    Les deux octets à DE+9 qui contienent normalement le nombre de secteurs
+    logiques contiendrons toujours 00.
+    Quant au nombre de secteurs logiques, il sera sur les 3 octets à DE+18.
+    00 voudra dire 100h pour le nombre de secteurs par FAT à DE+12.
+
+
+7. Autres
+
+  - Le pilote FAT16 est un programme en cours de développement.
+    Je décline toutes responsabilité en cas de destruction de données qui se
+    produirait pendant l'utilisation du pilote. Veuillez travailler en FAT16
+    qu'avec des copies de vos données et logiciels.
+
+  - Le MSX-DOS2 est un très bon OS mais il peut lire et écrire que sur une
+    partie des disques FAT16. Il faut faire très attention en écriture
+    car seuls les 12 bits sont gérés et cela peut corrompre les données.
+
+  - Pour accélérer la commande DIR, j'ai utilisé un cache dédiés pour la
+    fonction 1Bh. Ce cache se trouve dans des pages de 16Ko alloués dans le
+    Memory Mapper principal. Si les pages libres sont insuffisantes, le
+    cache sera créé sur le disque et la commande DIR deviendra lente.
+    (Aucun message d'erreur ne s'affiche lorsque la RAM est insuffisante)
+
+  - Les fonctions suivantes du DOS2 sont désactivée lors de l'utilisation du
+    pilote FAT16. (Renvoie le code d'erreur DCh si elles sont utilisées)
+    Vous devez retirer le pilote FAT16 pour les utiliser.
+
+	67h - Formatage d'une disquette (Vous pouvez utiliser FFORMAT.COM
+	      de Ryouga)
+	68h - Créer ou supprimer le RAM-disk *
+
+    (*) Si le RAM-disk est créé avant d'installer le pilote FAT16, il restera
+        utilisable.
+
+  - Si un autre logiciel est résident
+    Le pilote FAT16 réside sur la plage mémoire 3F00h~3FFFh et les routines
+    des fonctions 67h et 68h sur une page indiquée par le contenu de F2D0h.
+    MSXCDEX (de Taro) est utilisable avec le pilote FAT16 car il n'utilise
+    pas ces adresses. Ce qui n'est pas le cas de Luna (de Tsuyoshi).
+
+  - Les longs noms de fichier ne sont pas pris en charge.
+    La commande DEL du MSX-DOS 2 ne sait pas effacer les fichiers au noms
+    longs. Même si vous supprimez tous les fichiers avec un long nom de fichier
+    dans un dossier,  il ne sera plus possible de supprimer ce dossier.
+    Pour effacer les fichiers au nom long, vous veuillez utiliser "Long File
+    Name Killer" (de Tatsu) ou un OS qui peut le faire.
+ 
+    Pour afficher le nom complet des fichiers au nom long vous pouvez utiliser
+    la commande LDIR (de Tatsu).
+
+  - Les commandes qui manipulent la FAT du genre CHKDSK ou UNDEL ne sont
+    pas utilisable. N'essayez en aucun cas de les utiliser sur un disque FAT16.
+
+  - Si vous copiez un grand nombre de fichiers (tels que 100 fichiers) à la
+    fois, cela échouera dans 85% des cas.
+
+8. Historique des versions :
+
+[ver0.12]
+
+ - Correction des bugs qui se produisaient lors de l'utilisation de la
+   commande externe XCOPY du MSX-DOS 2. (Trouvé par KonamiMan.)
+
+ - Lors de l'utilisation de XCOPY, les bits 16~23 du numéro du secteur des
+   dossiers sont sauvegardés dans le FIB+38h qui est une zone réservée.
+   Cette zone est supposée ne pas être utilisée. Par conséquent, le
+   fonctionnement ne sera pas toujours garanti.
+
+[ver0.11]
+
+ - Correction d'un bug à l'affichage des dossiers. (Trouvé par KonamiMan.)
+
+[ver0.10]
+
+ - Correction d'un bug lors de l'utilisation du Ramdisk sous MSX-DOS 2.20.
+
+[ver0.09]
+
+ - J'ai remplacé la méthode de reconnaissance de la FAT16 par le texte "FAT16"
+   écrit du dossier racine jusqu'au secteur de Boot pour être aussi compatible
+   avec les disques formatés FAT12 les autres appareils. Ne supporte pas les
+   secteurs de boot sans le texte "FAT16".
+
+ - Changement des paramètres
+
+[ver0.08]
+
+ - J'ai fait en sorte que les informations réservées sur la FAT restent lors
+   de la suppression d'un fichier ou d'un dossier sur un disque au format
+   autre que DOS 2. Par exemple, si une commande UNDEL.COM pour FAT16 est
+   développée dans le futur, vous pourrez restaurer les fichiers supprimés.
+
+ - L'indicateur d'activation UNDEL est écrit pour amorcer le secteur +10
+   lorsqu'un fichier ou un dossier est supprimé sur un disque autre qu'au
+   format DOS 2.
+   UNDEL.COM ne peut pas être utilisé pour le disque FAT16 mais on peut
+   supprimer des fichiers sur un disque au format DOS 1 avec le pilote
+   FAT16 installé. (Ils pourrons être restaurés avec UNDEL.COM par la suite
+   en retirant le pilote FAT16).
+ 
+ - Abandon de ma routine DSKIO pour la MEGA-SCSI.
+   Lors de la lecture de FAT dans la cache dédié avec la fonction 1Bh, C9h est
+   écrit dans le Hook de l'interruption 0038h. Même si les interruptions sont
+   autorisées, elles ne gênent plus la routine DSKIO.
+
+ - Ajout de l'option pour afficher des types de FAT pour chaque lecteur (bien
+   qu'il soit facile de le voir en regardant la taille des disques). 
+   Le message "not ready" s'affichera pour les lecteurs de disquettes.
+
+ - Changement l'adresse où le pilote est placé. Les fonctions 14h et 15h sont
+   désormais utilisables.
+
+ - L'affichage des paramètres de la fonction 31h est devenu compatible avec
+   les disques FAT16.
+ 
+ - Les partitions FAT16 de la MEGA-SCSI peut être changée avec CP16.COM.
+
+ - Le pilote FAT16 fonctionne avec l''interface ATA-IDE à partir de BIOS 2.00
+   ou supérieur.
+ 
+
+9. Remerciements 
+ 
+  Je remercie toutes les personnes suivantes qui ont aidés au développement
+  du patch FAT16 grâce à leurs retours.
+ 
+   Mikasen, Manuel Pazos, Tsuzikawa, Taro, SAKA
+   GYRO, A to C, Korochi, Meraman, Hiroyuki, BUSH
+   Jon De Schrijder, KonamiMan
+
+
+ 
+  Contact:
+       e-mail : k-mizuo@snow.ucatv.ne.jp
+       OKEI
+
+  

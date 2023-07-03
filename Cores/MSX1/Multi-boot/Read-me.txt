@@ -1,0 +1,24 @@
+-------------------------------
+Batch file samples for MSX-DOS2
+-------------------------------
+
+If you want use some of these batch file samples copy them to root folder of
+boot disk.
+
+
+DOS.BAT is for the MSX-DOS (that must be installed into the root folder).
+
+M.BAT is for M file manager (that must be installed into the /M folder).
+
+MC.BAT is for MSX Commander (that must be installed into the /MC folder).
+
+MM.BAT is for Multimente (that must be installed into the /MM folder).
+
+REBOOT.BAT is for CALL SYSTEM without parameter.
+
+SR.BAT is for Sofarun (that must be installed into the /SOFARUN folder).
+
+XCC.BAT is for XelaSoft Control Center. (that must be installed into
+        the folder /XCC).
+        
+Change the paths and remove the rem according to your configuration.

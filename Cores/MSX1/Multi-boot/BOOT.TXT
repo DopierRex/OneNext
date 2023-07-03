@@ -1,0 +1,16 @@
+ BOOT.BAS is a BASIC program to manually select the file manager or other
+ program you want to run at startup according to your choice.
+
+ You can set up to 10 programs. The layout is automatic.
+ It adapts to your generation of MSX and the current width of the screen.
+ MSX1-compatible programs only can be configured not to appear when the
+ disc boots on MSX. BOOT.BAS is compatible with DOS1, DOS2 and Nextor.
+
+ You just have to modify the DATA lines at the bottom of the program before
+ the "380 DATA 255 ,," line to add or delete an element.
+ The value after the DATA instruction must be 0 for programs MSX1 only,
+ 1 for MSX2 or newer.
+
+ The selection is made on the keyboard with the keys from 0 to 9,
+ the cursor and space/return keys, or the joystick.
+

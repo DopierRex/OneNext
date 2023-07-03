@@ -1,0 +1,6 @@
+This archive contains the following files:
+
+ - FAT16.COM	: The DOS command v0.12 to install the FAT16 driver
+ - FAT012E.TXT	: Documentation of FAT16 driver in English (ASCII code)
+ - FAT012F.TXT	: Documentation in French (Western - Windows Latin 1)
+ - FAT012J.TXT	: Documentation in Japanese (Shift-JIS)

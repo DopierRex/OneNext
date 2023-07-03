@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Coleco_Next" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Audio_DAC - Behavior D:|Documentacao|Eletronica|FPGA|Multicore|SRC|Multicore|ColecovisionFPGA|src|audio|Audio_DAC.vhd</ClosedNode>
+         <ClosedNode>/dblscan - rtl D:|Documentacao|Eletronica|FPGA|Multicore|SRC|Multicore|ColecovisionFPGA|src|video|dblscan.vhd</ClosedNode>
+         <ClosedNode>/framebuffer - SYN D:|Documentacao|Eletronica|FPGA|Multicore|SRC|Multicore|ColecovisionFPGA|src|video|framebuffer.vhd</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|Multicore|SRC|Multicore|ColecovisionFPGA|src|syn-next|next_top.vhd/ps2if_inst - colecoKeyboard - SYN</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|Multicore|SRC|Multicore|ColecovisionFPGA|src|syn-next|next_top.vhd/vg - colecovision - Behavior</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|Multicore|SRC|Multicore|ColecovisionFPGA|src|syn-next|next_top.vhd/vga - vga - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/inst_dvid - hdmi - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/cpu - T80a - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/psg_b - sn76489_top - struct</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/addr_mux_b - vdp18_addr_mux - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/col_mux_b - vdp18_col_mux - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/cpu_io_b - vdp18_cpuio - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/ctrl_b - vdp18_ctrl - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/hor_vert_b - vdp18_hor_vert - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/pattern_b - vdp18_pattern - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/sprite_b - vdp18_sprite - rtl</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/vdp18_comp_pack</ClosedNode>
+         <ClosedNode>/next_top - behavior D:|Documentacao|Eletronica|FPGA|ZX Spectrum Next Cores|Sources|Colecovision|src|syn-next|next_top.vhd/vg - colecovision - Behavior/vdp18_b - vdp18_core - struct/vdp18_pack</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>next_top - behavior (D:/Documentacao/Eletronica/FPGA/ZX Spectrum Next Cores/Sources/Colecovision/src/syn-next/next_top.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a40000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>next_top - behavior (D:/Documentacao/Eletronica/FPGA/ZX Spectrum Next Cores/Sources/Colecovision/src/syn-next/next_top.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001bf000000010000000100000000000000000000000064ffffffff000000810000000000000001000001bf0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000004d2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000af0000000100000000000000d70000000100000000000000660000000100000000000002e60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>clocks.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000002000000013401000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002ca000000010000000100000000000000000000000064ffffffff000000810000000000000001000002ca0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002ca000000010000000100000000000000000000000064ffffffff000000810000000000000001000002ca0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002ca000000010000000100000000000000000000000064ffffffff000000810000000000000001000002ca0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>
