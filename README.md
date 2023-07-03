@@ -167,6 +167,3 @@ Please check 'Quick Start' for more information on how to use each of the extra 
  
 Now, you can start using the extra systems and consoles, switch off WiFi, manage files, or enjoy music players.. all from your NextZXOS menu! 
 
- 
-
-
