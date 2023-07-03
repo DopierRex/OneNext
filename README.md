@@ -35,7 +35,7 @@ The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 Additional tools executable from NextZXOS menu are:
 
 
--WiFi Off, simple WiFi switch-off from menu, by DopierRex
+-WiFi Off, WiFi switch-off option, by DopierRex
 
 -NextSIDPlayer by em00k, David Saphier
 
