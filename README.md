@@ -8,9 +8,7 @@ Please be aware this is NOT an official Spectrum Next distribution package, or a
 The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an easy setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
 
 The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier. 
-
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is also a great tutorial on the YouTube channel 'Spectrum Next Stuff' 
-
 https://www.youtube.com/watch?v=khba0wV743Q&t=6s
 
 The extra machines in this build are from several open source projects, made by many authors:
@@ -55,7 +53,8 @@ https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arca
 IMPORTANT:
 OneNext is under the terms of the GNU General Public License by the Free Software Foundation, version 3. The use of resources in this repository is for evaluation and educational purposes; please proceed only if you are confident in your abilities, understand and accept the terms herein. Source software is under the terms of respective GNU / CC0 / Apache / MIT original projects' licenses. No liability or warrants are attributed to, implied in, or derived from this software. 
 
-None of the extra cores, settings and configurations are permanent, as they are only read from SD card. You can just revert to your usual setup by simply replacing the SD card with your own previusly used SD cards, whenever you wish.
+None of the extra cores, settings and configurations are permanent, as they are only read from SD card. 
+You can just revert to your usual setup by simply replacing the SD card with your own previusly used SD cards, whenever you wish.
 
 OneNext does not include game roms; you must add your own games/roms to their respective system folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI. 
 
