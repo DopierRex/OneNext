@@ -8,7 +8,10 @@ Please be aware this is NOT an official Spectrum Next distribution package, or a
 The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an easy setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
 
 The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier. 
-Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is also a great tutorial on the YouTube channel 'Spectrum Next Stuff' https://www.youtube.com/watch?v=khba0wV743Q&t=6s
+
+Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is also a great tutorial on the YouTube channel 'Spectrum Next Stuff' 
+
+https://www.youtube.com/watch?v=khba0wV743Q&t=6s
 
 The extra machines in this build are from several open source projects, made by many authors:
 
