@@ -140,18 +140,21 @@ IMPORTANT: The software in this repository does not alter, replace, or corrupt t
 
 -STEP 4
 
-Now, you can insert the prepared SD card in your Spectrum Next or N-go.
-The SD card is finally ready; however, you still need to FLASH the alternative cores on the Spectrum Next!
+The SD card is finally ready, you can insert it in your Spectrum Next or N-go.
+
+
+Now, you will need to FLASH the alternative cores right on the Spectrum Next!
 
 If you haven't already, you can start using a VGA monitor with your Next/N-go. 
 The default is VGA 50hz 'mode 0', but if you don't get a satisfactory display on your  monitor, you can reset  your Spectrum Next/N-go and check the VGA display frequencies by holding down key 'V' at power up and starting 'Screen Test'. Select a VGA mode you are happy with, from the different modes displayed on your monitor through the screen cycles.
 
 Also, you will notice that, if you have a PS/2 keyboard wired to the Spectrum Next, it will be now configured to work. Use a PS/2 splitter cable, if you want to add a PS/2 mouse.
 
-Flashing the extra cores is relatively simple. Reset your Spectrum Next/N-go, at start-up press the key 'C' to enter ZX Spectrum Next Extra Cores. There are up to 14 FPGA slots available, listed vertically from numbers 18 to 31. From here, you can enter, erase, and update the extra cores.
+Flashing the extra cores is relatively simple. Reset your Spectrum Next/N-go, upon boot press the key 'C' to enter ZX Spectrum Next Extra Cores. There are up to 14 FPGA slots available, listed vertically from numbers 18 to 31. From here, you can enter, erase, and update the extra cores.
 
 Once you select an empty slot and press 'space', a list of extra cores will appear on the screen. Select any of the available cores and press 'enter' to flash it. Once a core is flashed to a slot, it will no longer show on the list of cores that can be flashed (unless you erase it first). Flashing an extra core is actually a simple process; it takes just a few seconds.
-You will need to flash all the extra cores on this release, one by one, and ensure they are named as listed hereunder. The slot number doesn't matter though; a core can be flashed to any of the available slots, from 08 to 31.
+
+You will need to flash all the extra cores on this release, one by one, and ensure they appear named as listed hereunder. The slot number doesn't matter though; an extra core can be flashed to any of the available slots, from 08 to 31.
 
 Acorn BBC Master
 
@@ -170,11 +173,13 @@ SAMCOUPE
 
 When you have finished flashing all of the extra cores, restart your Spectrum Next in default Next personality.
 
-Please read QUICKSTART for more information on how to use each of the extra cores, this file is found inside the folders SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI, together with README
+Please read QUICKSTART for more information on how to use each of the extra cores, this file is found inside each folder: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI, together with the README file!
  
-For the Acorn BBC Master, please read BBC_QUICKSTART in directory BBC, which contains more detailed information due to the membrane keyboard support and commands.
+For the Acorn BBC Master, please read BBC_QUICKSTART in directory BBC; it contains more detailed information, due to the Next membrane keyboard support and commands.
 
-IMPORTANT: This build and its repository do NOT include game roms; so for the extra systems, it is your own prerogative to add games/roms in the relevant folders. Please check README.txt inside each of the extra system directory: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI
+IMPORTANT: This build and its repository do NOT include game roms.
+
+So for the extra systems, it is your own prerogative to add games/roms in the relevant folders. Please check README.txt inside each of the extra system directory: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI
 
 Now, you can start extra machines and consoles, switch WiFi off, manage files, or play music.. 
 all from your NextZXOS menu!
