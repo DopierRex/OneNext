@@ -5,7 +5,7 @@ Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-
 A set of alternative cores, settings and additional options from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is having multicore capability and features from just one SD card (no more different SD cards for the extra cores).
 
 Please be aware this is NOT an official Spectrum Next distribution package, or associated with SpecNext Ltd. 
-The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an easy setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
+The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an integrated setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
 
 The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier. 
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is also a great tutorial on the YouTube channel 'Spectrum Next Stuff' 
@@ -45,7 +45,7 @@ Additional tools executable from NextZXOS menu are:
 
 -CalmCommander, file commander by perrada69, Miroslav Bursa
 
-All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, references, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
+All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the original creators by checking their main repositories and extensive work.
 
 Please note that Arcade cores/roms are NOT included in this repository; arcades are not within the scope of this project at present. If you are interested in arcade cores, you should check out Victor Trucco's fantastic work on his repository 
 https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades
@@ -53,10 +53,9 @@ https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arca
 IMPORTANT:
 OneNext is under the terms of the GNU General Public License by the Free Software Foundation, version 3. The use of resources in this repository is for evaluation and educational purposes; please proceed only if you are confident in your abilities, understand and accept the terms herein. Source software is under the terms of respective GNU / CC0 / MIT original projects' licenses. No liability or warrants are attributed to, implied in, or derived from this software. 
 
-None of the extra cores, settings and configurations are permanent, as they are only set from the SD card. 
-You can just revert to your usual setup by simply replacing the SD card with your own previusly used SD cards, whenever you wish.
+None of the extra cores, settings and configurations in OneNext are permanent; they are only set from the SD card files. You can just revert to your old Next build, by simply replacing the SD card with your own previous card, whenever you wish.
 
-OneNext does not include game roms; you must add your own games/roms to respective system folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI. 
+OneNext does not include game roms; you must add your games/roms to respective system folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI. 
 
 
 REQUIREMENTS
@@ -64,13 +63,13 @@ REQUIREMENTS
 This repository is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
 Those boards use a FPGA Xilinx XC6SLX16.
 
-The extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one used for Kickstarter 1. Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
+The extra cores are not expected to work on the new Spectrum Next machines from Kickstarter 2 (ks2), as the FPGA logic device is different from the one used for Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next FPGA of Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
 1. A VGA MONITOR/TV, and a VGA display lead to connect it
 
-Check your VGA monitor/TV boot menu to see if you can adjust horizontal and vertical settings, for video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master extra core supports digital display (HDMI/DVI). A VGA monitor is  ideal for the extra cores and it can be obtained inexpensively; a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate display for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
+Check your VGA monitor/TV boot menu to see if you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master extra core supports digital display (HDMI/DVI). A VGA monitor is  ideal for the extra cores and it can be obtained inexpensively; a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
 
-Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles; depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
+Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles. Depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
 
 For more information, please refer to the official Sinclair ZX Spectrum Next User Manual, 'Chapter 1: Setting it UP', also available online at https://www.specnext.com/zx-spectrum-next-user-manual-first-edition/
 
