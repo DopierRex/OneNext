@@ -8,11 +8,12 @@ colecofpga - Colecovision FGPA port from old PACE project
 
 WORKS WITH PS/2 KEYBOARD, ATARI STANDARD JOYSTICK, VGA VIDEO
 
+Check your VGA monitor/TV menu to see if you can adjust horizontal and vertical settings, for the video output to be centred on the screen.
 
 Keys
 ----
 
-- From multcart menu, use joystick to navigate to the folder /COLECO and use FIRE 1 button to load the selected ROM.
+- From menu, use joystick to navigate to the folder /COLECO and use FIRE 1 button to load the selected ROM.
 
 - Holding START and SELECT together resets the machine, returning in the multcart menu.
 
