@@ -2,7 +2,7 @@ OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
 
-A set of alternative cores, settings and additional features from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is having multicore capability and features from just one SD card (no more different SD cards for the extra cores).
+A set of alternative cores, settings and additional options from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is having multicore capability and features from just one SD card (no more different SD cards for the extra cores).
 
 Please be aware this is NOT an official Spectrum Next distribution package, or associated with SpecNext Ltd. 
 The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an easy setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
@@ -32,7 +32,7 @@ The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 -NES, from fpganes ZXUNO port, 2016 DistWave (VGA)
 
 
-Additional tools selectable from NextZXOS menu are:
+Additional tools executable from NextZXOS menu are:
 
 
 -WiFi Off, simple WiFi switch-off from menu, by DopierRex
@@ -45,43 +45,43 @@ Additional tools selectable from NextZXOS menu are:
 
 -CalmCommander, file commander by perrada69, Miroslav Bursa
 
-All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, references, and relevant links are included on this repository. You are encouraged to learn about the awesome projects  of the creators by checking their main repositories and extensive work.
+All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, references, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
-Please note that Arcade cores/roms are NOT included in this repository; arcades are not within the scope of this project. If you are interested in arcade cores, you should check out Victor Trucco's fantastic work on his repository 
+Please note that Arcade cores/roms are NOT included in this repository; arcades are not within the scope of this project at present. If you are interested in arcade cores, you should check out Victor Trucco's fantastic work on his repository 
 https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades
 
 IMPORTANT:
-OneNext is under the terms of the GNU General Public License by the Free Software Foundation, version 3. The use of resources in this repository is for evaluation and educational purposes; please proceed only if you are confident in your abilities, understand and accept the terms herein. Source software is under the terms of respective GNU / CC0 / Apache / MIT original projects' licenses. No liability or warrants are attributed to, implied in, or derived from this software. 
+OneNext is under the terms of the GNU General Public License by the Free Software Foundation, version 3. The use of resources in this repository is for evaluation and educational purposes; please proceed only if you are confident in your abilities, understand and accept the terms herein. Source software is under the terms of respective GNU / CC0 / MIT original projects' licenses. No liability or warrants are attributed to, implied in, or derived from this software. 
 
-None of the extra cores, settings and configurations are permanent, as they are only read from SD card. 
+None of the extra cores, settings and configurations are permanent, as they are only set from the SD card. 
 You can just revert to your usual setup by simply replacing the SD card with your own previusly used SD cards, whenever you wish.
 
-OneNext does not include game roms; you must add your own games/roms to their respective system folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI. 
+OneNext does not include game roms; you must add your own games/roms to respective system folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI. 
 
 
 REQUIREMENTS
 
-This repository is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
+This repository is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
 Those boards use a FPGA Xilinx XC6SLX16.
 
-The extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one in Kickstarter 1. Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
+The extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one used for Kickstarter 1. Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
 1. A VGA MONITOR/TV, and a VGA display lead to connect it
 
-Check your VGA monitor/TV boot menu to see if you can adjust settings, with output centred on your screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master extra core supports digital display (HDMI/DVI). A VGA monitor is therefore ideal for the extra cores, it can be obtained very inexpensively these days, and a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate display for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
+Check your VGA monitor/TV boot menu to see if you can adjust horizontal and vertical settings, for video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master extra core supports digital display (HDMI/DVI). A VGA monitor is  ideal for the extra cores and it can be obtained inexpensively; a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate display for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
 
-Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles, depending on your monitor, select 'mode 0' whenever possible, or a another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
+Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles; depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
 
-For more information, refer to the official Sinclair ZX Spectrum Next User Manual, 'Chapter 1: Setting it UP', also available online at https://www.specnext.com/zx-spectrum-next-user-manual-first-edition/
+For more information, please refer to the official Sinclair ZX Spectrum Next User Manual, 'Chapter 1: Setting it UP', also available online at https://www.specnext.com/zx-spectrum-next-user-manual-first-edition/
 
 2. SPEAKERS
 
-If your VGA monitor does not have built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, getting a simple set of speakers is quite inexpensive, probably you already have a set of speakers that can be used. Consider also getting a good amplified stereo system or speakers to enjoy the awesome sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
+If your VGA monitor does not have built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, a simple set of speakers is quite inexpensive, probably you already have a set of speakers that can be used. Consider also getting a good amplified stereo system or speakers to enjoy the fantastic sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
 Moreover, software like NextSIDPlayer and NXMODPlayer by the legendary David Saphier let you play PT3 and Amiga MOD files, while NextPlayer by Miroslav Bursa lets you play STC, PT2, PT3, SQT and TS (TurboSound) music files.
 
 3. PS/2 KEYBOARD
 
-The open source cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA, and 3.5mm audio because that's what they were developed for. As with other FPGA builds, a PS/2 keyboard provides more keys than most source keyboards; for example, although the Acorn BBC Master core has support for the Spectrum Next keyboard (a great achievement!), it may not be ideal to use because the layout is so different.
+The cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA, and 3.5mm audio because that's what they were originally developed for. As with other FPGA builds, a PS/2 keyboard provides more keys than most source keyboards; for example, although the BBC Master core has support for the Spectrum Next keyboard (a great achievement by David Banks!), it may not be always ideal to use because the layout of the Acorn BBC Micro is so different.
 
 OPTIONAL (reccommended):
 PS/2 Y-Splitter cable and a PS/2 Mouse; few programs require a mouse.
@@ -99,7 +99,7 @@ For example, a 32gb SD card size into 4 partitions: 1st partition 4gb FAT16, 2nd
 IMPORTANT: ALL partitions must be PRIMARY, and only the first 4gb partition must be formatted in FAT16, the next partitions (2nd, 3rd..) must be formatted in FAT32 (!)
 
 Games for the extra systems and consoles need to be placed on the first NextZXOS 'C' drive (FAT16, 1st SD partition) in their respective folders: SAM, CPC6128, MSX, NES, COLECO, ATARI, where you can place your own games/roms. 
-Anything else, ZX Spectrum legacy or Next files, can be on any drive (C,D,E,F..)
+Anything else, ZX Spectrum legacy or Next files, can be on any drive (C,D,E,F..) because Spectrum Next has support for FAT16 and FAT32.
 
 You can keep all your files neatly organised, for example: the extensive ZX Spectrum library in drive D, Next games in drive E, music files or your own programs in drive F..
 
@@ -109,11 +109,17 @@ Please choose the proper tool you are comfortable with or do your own research f
 
 INSTRUCTIONS
 
-1) On your new FAT16 4gb SD card, the first file that you must copy is a standard BEEB.MMB file; this file is needed for the modern SD Card File System MMFS, which is used in the BeebFpga core. Download it from the following GitHub address, unzip it and copy the single file to the root of the SD card.
+-STEP 1 
+
+On your new FAT16 4gb SD card, the first file that you must copy is a standard BEEB.MMB file; this is needed for the modern SD Card File System MMFS, which is used by the BeebFpga core. Download it from hoglet67 on GitHub  
 
 https://github.com/hoglet67/BeebFpga/releases/download/specnext_beta1/BEEB.MMB.zip 
 
-2) The resources on this repository do not include the official System/Next distribution, therefore, you have to dowload it yourself. Download the latest stable System/Next distribution, sn-complete-22.10a.zip (recommended) SYSTEM/NEXT 22.10 at 
+Unzip it, and copy the single file to the root of the SD card.
+
+-STEP 2 
+
+The resources on this repository do not include the official System/Next distribution, therefore, you have to dowload it yourself. Download the latest stable System/Next distribution, sn-complete-22.10a.zip (recommended) SYSTEM/NEXT 22.10 at 
 
 https://www.specnext.com/latestdistro
 
@@ -126,17 +132,20 @@ Please read the instructions carefully at the link above for SYSTEM/NEXT 22.10
 
 Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. As extra cores require an external PS/2 keyboard, that feature needs to be enabled (you can still use a mouse AND a keyboard with a PS/2 Y-splitter cable). However, no action is really required at this stage because, after you complete the next step (3), PS/2 keyboard will be automatically configured.
 
+-STEP 3
 
-3) Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 2). 
+Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 2). 
 If you get the prompt on your PC screen "The destination already has a file named '....'", click 'yes' to "Replace the file in the destination" for all files.
  
 IMPORTANT: The software in this repository does not alter, replace, or corrupt the official Spectrum Next firmware or its code; in fact, additional files, folders are simply added with relevant settings and configurations.
 
-4) Now, you can insert the prepared SD card in your Spectrum Next or N-go.
- The SD card is finally ready; however, you still need to FLASH the alternative cores on the Spectrum Next!
+-STEP 4
+
+Now, you can insert the prepared SD card in your Spectrum Next or N-go.
+The SD card is finally ready; however, you still need to FLASH the alternative cores on the Spectrum Next!
 
 If you haven't already, you can start using a VGA monitor with your Next/N-go. 
-The default is VGA 50hz 'mode 0', but if you don't get a satisfactory display on your  monitor, you can reset  your Spectrum Next/N-go and check the VGA display frequencies by holding down key 'V' at power up and starting 'Screen Test'. Select a VGA mode you are happy with from different modes displayed through screen cycles.
+The default is VGA 50hz 'mode 0', but if you don't get a satisfactory display on your  monitor, you can reset  your Spectrum Next/N-go and check the VGA display frequencies by holding down key 'V' at power up and starting 'Screen Test'. Select a VGA mode you are happy with, from the different modes displayed on your monitor through the screen cycles.
 
 Also, you will notice that, if you have a PS/2 keyboard wired to the Spectrum Next, it will be now configured to work. Use a PS/2 splitter cable, if you want to add a PS/2 mouse.
 
@@ -160,13 +169,13 @@ NES_GAME
 SAMCOUPE
 
 
-When you have finished flashing all of the extra cores, restart your Spectrum Next in defaulf Next personality.
+When you have finished flashing all of the extra cores, restart your Spectrum Next in default Next personality.
 
 Please read QUICKSTART for more information on how to use each of the extra cores, this file is found inside the folders SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI, together with README
  
 For the Acorn BBC Master, please read BBC_QUICKSTART in directory BBC, which contains more detailed information due to the membrane keyboard support and commands.
 
-IMPORTANT: This build and its repository do NOT include game roms, so in order to use the extra systems cores, it is your own prerogative to add games/roms in relevant folders. Please check README.txt inside each of the extra systems directory: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI
+IMPORTANT: This build and its repository do NOT include game roms; so for the extra systems, it is your own prerogative to add games/roms in the relevant folders. Please check README.txt inside each of the extra system directory: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI
 
 Now, you can start extra machines and consoles, switch WiFi off, manage files, or play music.. 
 all from your NextZXOS menu!
