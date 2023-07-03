@@ -1,0 +1,21 @@
+------------------------------------------------------
+-                                                    -
+- Ported to ZX Spectrum Next by Victor Trucco - 2018 -
+-                                                    -
+------------------------------------------------------
+Port of the A2601 FPGA implementation for the ZXUNO
+---------------------------------------------------------------------------------
+
+ATARI STANDARD & SEGA GENESIS/MASTERDRIVE JOYSTICKS, VGA VIDEO 50/60Hz
+
+- Needs a PS/2 keyboard to access the menu (Esc key) and load roms
+
+- RESET (green) button to soft reset 
+
+- Support from menu to select PAL / NTSC
+
+
+Check your VGA monitor/TV menu to see if you can adjust horizontal and vertical settings, for the video output to be centred on the screen.
+
+
+ALL CREDITS TO THE AUTHORS
