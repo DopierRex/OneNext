@@ -81,14 +81,14 @@ Moreover, software like NextSIDPlayer and NXMODPlayer by the legendary David Sap
 
 3. PS/2 KEYBOARD
 
-The open source cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA, and 3.5mm audio because that's what they were developed for. As with other FPGA builds, a PS/2 keyboard is the way to use the recreated machines, for it provides more keys than most source keyboards; for example, although the Acorn BBC Master core has support for the Spectrum Next keyboard (a great achievement!), it may not be ideal to use because the layout is so different.
+The open source cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA, and 3.5mm audio because that's what they were developed for. As with other FPGA builds, a PS/2 keyboard provides more keys than most source keyboards; for example, although the Acorn BBC Master core has support for the Spectrum Next keyboard (a great achievement!), it may not be ideal to use because the layout is so different.
 
 OPTIONAL (reccommended):
 PS/2 Y-Splitter cable and a PS/2 Mouse; few programs require a mouse.
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
-Whether you have a Spectrum Next (ks1) or N-go, you will need to format a new SD card to FAT16 (not FAT32). Please do NOT re-use your old or ordinary Next SD card, you should definitely obtain a new SD card specifically for this. A few extra cores will only work with cards up to 4gb maximum; therefore, if you have a larger SD card, you must create on it a FAT16 4gb primary partition, or even better, split the SD card size into multiple partitions (as explained in the following section, marked OPTIONAL).
+Whether you have a Spectrum Next (ks1) or N-go, you will need to format a new SD card to FAT16 (not FAT32). Please do NOT re-use your old or ordinary Next SD card, you should definitely obtain a new SD card specifically for this. A few of the extra cores will only work with cards up to 4gb maximum; therefore, if you have a larger SD card, you must create on it a FAT16 4gb primary partition or, even better, split the SD card size into multiple partitions (explained in the following section).
 
 OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way:
@@ -105,7 +105,7 @@ You can keep all your files neatly organised, for example: the extensive ZX Spec
 
 There are many free programs/tools for Windows, Mac or Linux to create multiple partitions on a single SD card. To name a few, 'EaseUS Partition Master' for Windows PC or 'GParted' for Linux (amd64, or i686, i686-PAE) https://gparted.org/download.php
 
-Please choose the proper tool you are comfortable with or do your own research for a suitable method to partition and correctly format your SD card.
+Please choose the proper tool you are comfortable with or do your own research for a suitable method to partition and format your SD card correctly.
 
 INSTRUCTIONS
 
@@ -113,18 +113,18 @@ INSTRUCTIONS
 
 https://github.com/hoglet67/BeebFpga/releases/download/specnext_beta1/BEEB.MMB.zip 
 
-2) The resources on this repository do not include the official System/Next distribution, therefore, you have to dowload it yourself. Download the latest stable complete System/Next distribution, sn-complete-22.10a.zip (recommended) SYSTEM/NEXT 22.10 at 
+2) The resources on this repository do not include the official System/Next distribution, therefore, you have to dowload it yourself. Download the latest stable System/Next distribution, sn-complete-22.10a.zip (recommended) SYSTEM/NEXT 22.10 at 
 
 https://www.specnext.com/latestdistro
 
-Navigate to the place where you downloaded the distribution and double-click it to unzip. Select all files in the distribution and copy them to the root folder of your newly formatted FAT16 SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as marked optional in REQUIREMENTS above).
+Navigate to the place where you downloaded the distribution and double-click it to unzip. Select all files in the distribution and copy them to the root folder of your newly formatted FAT16 SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as in REQUIREMENTS above).
 
 At this stage, it's a good idea to check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next, before proceeding to the next step. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
 PLEASE NOTE: You need at least core v3.01.10
 Please read the instructions carefully at the link above for SYSTEM/NEXT 22.10
 
-Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. As extra cores require an external PS/2 keyboard, that feature needs to be enabled (you can still use a mouse AND a keyboard with a PS/2 Y-splitter cable). However, no action is really required for enabling a PS/2 keyboard at this stage because, after you complete the next step (3), it will be automatically configured.
+Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. As extra cores require an external PS/2 keyboard, that feature needs to be enabled (you can still use a mouse AND a keyboard with a PS/2 Y-splitter cable). However, no action is really required at this stage because, after you complete the next step (3), PS/2 keyboard will be automatically configured.
 
 
 3) Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 2). 
@@ -133,7 +133,7 @@ If you get the prompt on your PC screen "The destination already has a file name
 IMPORTANT: The software in this repository does not alter, replace, or corrupt the official Spectrum Next firmware or its code; in fact, additional files, folders are simply added with relevant settings and configurations.
 
 4) Now, you can insert the prepared SD card in your Spectrum Next or N-go.
- The SD card set-up is finally complete; however, you still need to FLASH the alternative cores on the Spectrum Next!
+ The SD card is finally ready; however, you still need to FLASH the alternative cores on the Spectrum Next!
 
 If you haven't already, you can start using a VGA monitor with your Next/N-go. 
 The default is VGA 50hz 'mode 0', but if you don't get a satisfactory display on your  monitor, you can reset  your Spectrum Next/N-go and check the VGA display frequencies by holding down key 'V' at power up and starting 'Screen Test'. Select a VGA mode you are happy with from different modes displayed through screen cycles.
@@ -164,9 +164,9 @@ When you have finished flashing all of the extra cores, restart your Spectrum Ne
 
 Please read QUICKSTART for more information on how to use each of the extra cores, this file is found inside the folders SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI, together with README
  
-For the Acorn BBC Master, please read BBC_QUICKSTART in directory BBC, which contains more detailed information due to membrane keyboard support and commands.
+For the Acorn BBC Master, please read BBC_QUICKSTART in directory BBC, which contains more detailed information due to the membrane keyboard support and commands.
 
-IMPORTANT: This build and its repository do NOT include game roms, so in order to use the extra systems cores, it is your own prerogative to add games/roms in relevant folders. Please check README.txt inside each of the extra systems directory SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI
+IMPORTANT: This build and its repository do NOT include game roms, so in order to use the extra systems cores, it is your own prerogative to add games/roms in relevant folders. Please check README.txt inside each of the extra systems directory: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI
 
-Now, you can start using extra machines and consoles, switch off WiFi, manage files, or enjoy music players.. 
+Now, you can start extra machines and consoles, switch WiFi off, manage files, or play music.. 
 all from your NextZXOS menu!
