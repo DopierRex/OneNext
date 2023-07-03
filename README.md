@@ -2,10 +2,10 @@ OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
 
-A set of alternative cores, settings and additional features from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at start-up. This resolves a deal of complexity for the average or casual user, the objective is to have multicore capability and features from just one SD card, with options executable from NextZXOS menu (no more SD card swapping, or having to use different SD cards for the extra cores).
+A set of alternative cores, settings and additional features from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is having multicore capability and features from just one SD card (no more different SD cards for the extra cores).
 
 Please be aware this is NOT an official Spectrum Next distribution package, or associated with SpecNext Ltd. 
-The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an easy setup. It is mainly for evaluation purposes, with the hope that it will encourage more people to explore Spectrum Next-related projects.
+The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an easy setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
 
 The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier. 
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is also a great tutorial on the YouTube channel 'Spectrum Next Stuff' https://www.youtube.com/watch?v=khba0wV743Q&t=6s
@@ -21,15 +21,8 @@ The extra machines in this build are from several open source projects, made by 
 -MSX1 by Victor Trucco, also from on previous MSX1FPGA work by Fabio Belavenuto (VGA @50/60Hz)
 
 
-
-
-
-
-
-
-
-
 The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
+
 
 -ATARI 2600 port of the A2601 FPGA implementation for the ZXUNO (VGA)
 
@@ -37,9 +30,11 @@ The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 
 -NES, from fpganes ZXUNO port, 2016 DistWave (VGA)
 
-Additional features and tools selectable from NextZXOS menu are:
 
--WIFI OFF, switch off on board WiFi by DopierRex
+Additional tools selectable from NextZXOS menu are:
+
+
+-WiFi Off, simple WiFi switch-off from menu, by DopierRex
 
 -NextSIDPlayer by em00k, David Saphier
 
@@ -130,9 +125,6 @@ Please read the instructions carefully at the link above for SYSTEM/NEXT 22.10
 Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. As extra cores require an external PS/2 keyboard, that feature needs to be enabled (you can still use a mouse AND a keyboard with a PS/2 Y-splitter cable). However, no action is really required for enabling a PS/2 keyboard at this stage because, after you complete the next step (3), it will be automatically configured.
 
 
-
-
-
 3) Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 2). 
 If you get the prompt on your PC screen "The destination already has a file named '....'", click 'yes' to "Replace the file in the destination" for all files.
  
@@ -152,11 +144,17 @@ Once you select an empty slot and press 'space', a list of extra cores will appe
 You will need to flash all the extra cores on this release, one by one, and ensure they are named as listed hereunder. The slot number doesn't matter though; a core can be flashed to any of the available slots, from 08 to 31.
 
 Acorn BBC Master
+
 AMSTRAD1
+
 ATARI_26
+
 COLECOVI
+
 MSX_128K
+
 NES_GAME
+
 SAMCOUPE
 
 
@@ -168,4 +166,5 @@ For the Acorn BBC Master, please read BBC_QUICKSTART in directory BBC, which con
 
 IMPORTANT: This build and its repository do NOT include game roms, so in order to use the extra systems cores, it is your own prerogative to add games/roms in relevant folders. Please check README.txt inside each of the extra systems directory SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI
 
-Now, you can start using extra machines and consoles, switch off WiFi, manage files, or enjoy music players.. all from your NextZXOS menu!
+Now, you can start using extra machines and consoles, switch off WiFi, manage files, or enjoy music players.. 
+all from your NextZXOS menu!
