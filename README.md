@@ -175,8 +175,8 @@ Please read QUICKSTART for more information on how to use each of the extra core
  
 For the Acorn BBC Master, please read BBC_QUICKSTART in directory BBC; it contains more detailed information, due to the Next membrane keyboard support.
 
-IMPORTANT: This build and its repository do NOT include game roms. 
-It is your own prerogative to add games/roms in the relevant folders. 
+IMPORTANT: This build and its repository do NOT include game ROMS. 
+It is your own prerogative to add games in the relevant folders. 
 Please check README.txt inside each of the extra system directory: SAMCOUPE, CPC6128, MSX, NES, COLECO, Atari for instructions. 
 
 Now, you can enjoy extra machines and consoles, switch WiFi off, manage files, or play music.. 
