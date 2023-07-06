@@ -1,4 +1,4 @@
-
+Mi
 OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
@@ -41,7 +41,7 @@ Additional tools executable from NextZXOS menu are:
 
 -CalmCommander, file commander by perrada69, Miroslav Bursa
 
-All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the original creators by checking their main repositories and extensive work.
+All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
 Please note that Arcades (cores/roms) are NOT included in this repository; at present, arcades are not within scope of the project. If you are interested in arcade cores, you should check out Victor Trucco's fantastic work on his repository 
 https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades
@@ -58,11 +58,11 @@ REQUIREMENTS
 OneNext is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
 Those boards use FPGA Xilinx XC6SLX16.
 
-The extra cores are not expected to work on the new Spectrum Next of Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next FPGA of Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
+The current extra cores are not expected to work on the new Spectrum Next of Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next FPGA of Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
 1. A VGA MONITOR/TV, and a VGA display lead to connect it
 
-Check your VGA monitor/TV boot menu to see if you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core supports digital display (HDMI/DVI). A VGA monitor is  ideal for the extra cores and it can be obtained inexpensively; 
+Check your VGA monitor/TV boot menu to see if you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core does support digital display (HDMI/DVI). A VGA monitor is ideal for the extra cores and it can be obtained inexpensively; 
 a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
 
 Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles. Depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
@@ -71,15 +71,15 @@ For more information, please refer to the official Sinclair ZX Spectrum Next Use
 
 2. SPEAKERS
 
-If your VGA monitor does not have built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, a simple set of speakers would be inexpensive to obtain, probably you already have a set of speakers that can be used. Consider also using a good amplified stereo system or speakers to enjoy the fantastic sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
+If your VGA monitor does not have built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, a simple set of speakers would be inexpensive to obtain, probably you already have a set of speakers that can be used. Consider also using a good amplified stereo system or speakers for the fantastic sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
 Moreover, NextSIDPlayer and NXMODPlayer by the legendary David Saphier let you play SID like sounds and Amiga MOD files, while NextPlayer by Miroslav Bursa plays STC, PT2, PT3, SQT and TS (TurboSound) music files! 
 
 3. PS/2 KEYBOARD
 
-The cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA output, and 3.5mm audio because that's what they were originally developed for. As with other FPGA builds, a PS/2 keyboard provides more keys than most source keyboards. Only the BBC Master core works with the Spectrum Next keyboard (a great achievement by David Banks!)
+The cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA output, and 3.5mm audio because that's what they were developed for originally. As with other FPGA builds, a PS/2 keyboard provides more keys than most source keyboards. Only the BBC Master core works with the Spectrum Next keyboard (a great achievement by David Banks!)
 
 OPTIONAL (reccommended):
-PS/2 Y-Splitter cable and a PS/2 Mouse; few programs require a mouse.
+PS/2 Y-Splitter cable and a PS/2 Mouse; only few programs require a mouse.
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
