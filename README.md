@@ -1,4 +1,4 @@
-Mi
+
 OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
