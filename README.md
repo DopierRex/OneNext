@@ -17,6 +17,8 @@ https://www.youtube.com/watch?v=khba0wV743Q&t=6s
 
 ![MACHINES2](https://github.com/DopierRex/OneNext/assets/137646337/661d522f-eeb9-4480-be9e-b250b1b29f5d)
 
+![CONSOLES](https://github.com/DopierRex/OneNext/assets/137646337/26a8523d-a6dd-4e0f-92fa-91d79a0d0d4b)
+
 The extra machines in this build are from several open source projects, made by many authors:
 
 -SAM COUPE by ManuFehri, based on McLeod's SAM Coupe core (VGA/RGB)
