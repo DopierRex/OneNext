@@ -58,13 +58,13 @@ REQUIREMENTS
 OneNext is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
 Those boards use FPGA Xilinx XC6SLX16
 
-NOTE: SAM COUPÉ extra core needs 2mb RAM expansion for Spectrum Next (ks1) 
+NOTE: SAM COUPÉ extra core needs 2MB RAM expansion for Spectrum Next (ks1) 
 
 Moreover, the current extra cores are not expected to work on the new Spectrum Next of Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
 1. A VGA MONITOR/TV, and a VGA display lead to connect it
 
-Check your VGA monitor/TV boot menu to see if you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core does support digital display (HDMI/DVI). A VGA monitor is ideal for the extra cores and it can be obtained inexpensively; 
+Check your VGA monitor/TV boot menu to see how you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core does support digital display (HDMI/DVI). A VGA monitor is ideal for the extra cores and it can be obtained inexpensively; 
 a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
 
 Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles. Depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
@@ -84,12 +84,12 @@ IMPORTANT:
 
 - Use or obtain a PS/2 keyboard that has standard full keyset, including up to 'F12' function key, and 'Scroll Lock' key
   
--Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work for Spectrum Next (ks1) extra cores, it needs to be a proper full PS/2 keyboard! 
+-Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work for Spectrum Next (ks1) extra cores, it needs to be a proper keyboard with PS/2 connector and full keyset! 
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
-Whether you have a Spectrum Next (ks1) or N-go, you will need to format a new SD card to FAT16 (not FAT32). 
-Please do NOT re-use your old or ordinary Next SD card, you should definitely obtain a new SD card specifically for this. 
+You will need to format a new SD card to FAT16 (not FAT32). 
+Please do NOT re-use your old or ordinary Next SD card, you should definitely use a new SD card specifically for this. 
 A few of the extra cores will only work with cards up to 4gb maximum; therefore, if you have a larger SD card, you must create a FAT16 4gb primary partition or, even better, split the SD card size into multiple partitions (explained in the following section).
 
 OPTIONAL (recommended):
@@ -101,7 +101,7 @@ For example, a 32gb SD card size into 4 partitions:
 2nd partition 10gb FAT32, 3rd partition 10gb FAT32, 4th partition 8gb FAT32.
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
 
-IMPORTANT: ALL partitions must be PRIMARY, and only the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) must be formatted in FAT32 (!)
+IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) must be formatted in FAT32 (!)
 
 Games for the extra systems and consoles need to be placed on the first NextZXOS 'C' drive (FAT16, 1st SD partition) inside their respective folders: SAM, CPC6128, MSX, NES, COLECO, ATARI, where you can place your own games/roms. 
 Anything else, ZX Spectrum legacy or Next, can be on any drive (C,D,E,F..) because Spectrum Next has support for FAT16 and FAT32.
@@ -132,10 +132,10 @@ Navigate to the place where you downloaded the distribution and double-click it 
 Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next, before proceeding to the next step. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
 PLEASE NOTE: You need at least core v3.01.10
-Please read the instructions carefully at the link above for SYSTEM/NEXT 22.10
-Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. As extra cores require an external PS/2 keyboard, that feature needs to be enabled! 
+READ the instructions carefully at the link above for SYSTEM/NEXT 22.10
+Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. Extra cores require an external PS/2 keyboard, that feature needs to be enabled! 
 
-Test that VGA video and PS/2 KEYBOARD are working before proceeding with next step. 
+Test that VGA video and PS/2 KEYBOARD are working for you before proceeding with next step. 
 
 -STEP 3
 
