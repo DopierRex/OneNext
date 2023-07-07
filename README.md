@@ -13,6 +13,10 @@ The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is a great tutorial on the YouTube channel 'Spectrum Next Stuff' 
 https://www.youtube.com/watch?v=khba0wV743Q&t=6s
 
+![MENU](https://github.com/DopierRex/OneNext/assets/137646337/3edd4b96-0f28-445f-9080-6b74a63a2a08)
+
+![MACHINES2](https://github.com/DopierRex/OneNext/assets/137646337/661d522f-eeb9-4480-be9e-b250b1b29f5d)
+
 The extra machines in this build are from several open source projects, made by many authors:
 
 -SAM COUPE by ManuFehri, based on McLeod's SAM Coupe core (VGA/RGB)
