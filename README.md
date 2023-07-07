@@ -3,7 +3,7 @@ OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
 
-A set of alternative cores, settings and additional options from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is multicore capability and features from just one SD card (no more different SD cards for extra cores).
+A set of alternative cores, settings and additional options from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is multicore capability and features from just one SD card (no more a different SD card for each extra core).
 
 Please be aware this is not an official Spectrum Next distribution package, or associated with SpecNext Ltd. The project is intended to implement open-source resources available for the Spectrum Next, made by third parties, and to provide an integrated setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
 
