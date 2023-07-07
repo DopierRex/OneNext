@@ -73,7 +73,7 @@ For more information, please refer to the official Sinclair ZX Spectrum Next Use
 
 2. SPEAKERS
 
-If your VGA monitor does not have built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, a simple set of speakers would be inexpensive to obtain, probably you already have a set of speakers that can be used. Consider also using a good amplified stereo system or speakers for the fantastic sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
+If your VGA monitor does not have built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, a simple set of speakers would be inexpensive to obtain, likely you might have speakers that can be used already. Consider also using a good amplified stereo system or speakers for the fantastic sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
 Moreover, NextSIDPlayer and NXMODPlayer by the legendary David Saphier let you play SID like sounds and Amiga MOD files, while NextPlayer by Miroslav Bursa plays STC, PT2, PT3, SQT and TS (TurboSound) music files! 
 
 3. PS/2 KEYBOARD
