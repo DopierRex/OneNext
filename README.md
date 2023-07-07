@@ -15,10 +15,6 @@ https://www.youtube.com/watch?v=khba0wV743Q&t=6s
 
 ![MENU](https://github.com/DopierRex/OneNext/assets/137646337/3edd4b96-0f28-445f-9080-6b74a63a2a08)
 
-![MACHINES2](https://github.com/DopierRex/OneNext/assets/137646337/661d522f-eeb9-4480-be9e-b250b1b29f5d)
-
-![CONSOLES](https://github.com/DopierRex/OneNext/assets/137646337/26a8523d-a6dd-4e0f-92fa-91d79a0d0d4b)
-
 The extra machines in this build are from several open source projects, made by many authors:
 
 -SAM COUPE by ManuFehri, based on McLeod's SAM Coupe core (VGA/RGB)
@@ -29,6 +25,8 @@ The extra machines in this build are from several open source projects, made by 
 
 -MSX1 by Victor Trucco, based also on previous MSX1FPGA by Fabio Belavenuto (VGA @50/60Hz)
 
+![MACHINES2](https://github.com/DopierRex/OneNext/assets/137646337/661d522f-eeb9-4480-be9e-b250b1b29f5d)
+
 The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 
 -ATARI 2600 port of the A2601 FPGA implementation for the ZXUNO (VGA)
@@ -36,6 +34,8 @@ The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 -COLECOVISION, FGPA port based from old PACE project (VGA)
 
 -NES, from fpganes ZXUNO port, 2016 DistWave (VGA)
+
+![CONSOLES](https://github.com/DopierRex/OneNext/assets/137646337/26a8523d-a6dd-4e0f-92fa-91d79a0d0d4b)
 
 Additional tools executable from NextZXOS menu are:
 
@@ -48,6 +48,8 @@ Additional tools executable from NextZXOS menu are:
 -NextPlayer by perrada69, Miroslav Bursa
 
 -CalmCommander, file commander by perrada69, Miroslav Bursa
+
+![MUSIC](https://github.com/DopierRex/OneNext/assets/137646337/276e59f9-817d-423c-af47-e821fa56918b)
 
 All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
