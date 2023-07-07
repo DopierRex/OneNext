@@ -64,7 +64,9 @@ Moreover, the current extra cores are not expected to work on the new Spectrum N
 
 1. A VGA MONITOR/TV, and a VGA display lead to connect it
 
-Check your VGA monitor/TV boot menu to see how you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core does support digital display (HDMI/DVI). A VGA monitor is ideal for the extra cores and it can be obtained inexpensively; 
+Check your VGA monitor/TV boot menu to see how you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core does support digital display (HDMI/DVI).
+However, ALL extra cores work with VGA video. 
+A VGA monitor is ideal for the extra cores and it can be obtained inexpensively; 
 a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
 
 Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles. Depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
