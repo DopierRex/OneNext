@@ -3,9 +3,9 @@ OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
 
-A set of alternative cores, settings and additional options from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is multicore capability and features from just one SD card (no more different SD cards for the extra cores).
+A set of alternative cores, settings and additional options from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. This resolves a deal of complexity for the average or casual user, the objective is multicore capability and features from just one SD card (no more different SD cards for extra cores).
 
-Please be aware this is not an official Spectrum Next distribution package, or associated with SpecNext Ltd. The project is intended to implement open-source features available for the Spectrum Next, made by third parties, and to provide an integrated setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
+Please be aware this is not an official Spectrum Next distribution package, or associated with SpecNext Ltd. The project is intended to implement open-source resources available for the Spectrum Next, made by third parties, and to provide an integrated setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
 
 The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier. 
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is a great tutorial on the YouTube channel 'Spectrum Next Stuff' 
@@ -56,9 +56,11 @@ This release and repository do NOT include game roms; you must add your games/ro
 REQUIREMENTS
 
 OneNext is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
-Those boards use FPGA Xilinx XC6SLX16.
+Those boards use FPGA Xilinx XC6SLX16
 
-The current extra cores are not expected to work on the new Spectrum Next of Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next FPGA of Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
+NOTE: SAM COUPÉ extra core needs 2mb RAM expansion for Spectrum Next (ks1) 
+
+Moreover, the current extra cores are not expected to work on the new Spectrum Next of Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next FPGA of Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
 1. A VGA MONITOR/TV, and a VGA display lead to connect it
 
@@ -78,8 +80,11 @@ Moreover, NextSIDPlayer and NXMODPlayer by the legendary David Saphier let you p
 
 The cores that make it possible to recreate other machines on the Spectrum Next tend to support PS/2 keyboards, VGA output, and 3.5mm audio because that's what they were developed for originally. As with other FPGA builds, a PS/2 keyboard provides more keys than most source keyboards. Only the BBC Master core works with the Spectrum Next keyboard (a great achievement by David Banks!)
 
-OPTIONAL (reccommended):
-PS/2 Y-Splitter cable and a PS/2 Mouse; only few programs require a mouse.
+IMPORTANT: 
+
+- Use or obtain a PS/2 keyboard that has standard full keyset, including up to 'F12' function key, and 'Scroll Lock' key
+  
+-Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work for Spectrum Next (ks1) extra cores, it needs to be a proper full PS/2 keyboard! 
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
@@ -124,12 +129,13 @@ https://www.specnext.com/latestdistro
 
 Navigate to the place where you downloaded the distribution and double-click it to unzip. Select all files and copy them to the root folder of the FAT16 4gb SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as in REQUIREMENTS above).
 
-At this stage, it's a good idea to check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next, before proceeding to the next step. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
+Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next, before proceeding to the next step. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
 PLEASE NOTE: You need at least core v3.01.10
 Please read the instructions carefully at the link above for SYSTEM/NEXT 22.10
+Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. As extra cores require an external PS/2 keyboard, that feature needs to be enabled! 
 
-Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. As extra cores require an external PS/2 keyboard, that feature needs to be enabled (you can still use a mouse AND a keyboard with a PS/2 Y-splitter cable). However, no action is really required at this stage because, after you complete the next step (3), PS/2 keyboard will be automatically configured.
+TEST VGA video and PS/2 KEYBOARD before proceeding with next step. 
 
 -STEP 3
 
@@ -144,10 +150,7 @@ The SD card is finally ready, you can insert it in your Spectrum Next or N-go.
 
 Now, you will need to FLASH the alternative cores right on the Spectrum Next!
 
-If you haven't already, you can start using a VGA monitor with your Next/N-go. 
-The default is VGA 50hz 'mode 0', but if you don't get a satisfactory display on your monitor, you can restart the Spectrum Next/N-go and check the VGA display frequencies by holding down key 'V' at power up and starting 'Screen Test'. Select a VGA mode you are happy with, from the different modes displayed on your monitor through the screen cycles.
-
-Also, you will notice that, if you have a PS/2 keyboard wired to the Spectrum Next, it will be now already configured to work. Use a PS/2 splitter cable, if you want to add a PS/2 mouse! 
+Use a VGA monitor and with the PS/2 keyboard wired to your Next/N-go. The default is VGA 50hz 'mode 0', but if you don't get a satisfactory display on your monitor, you can restart the Spectrum Next/N-go and check the VGA display frequencies by holding down key 'V' at power up and starting 'Screen Test'. Select a VGA mode you are happy with, from the different modes displayed on your monitor through the screen cycles.
 
 Flashing the extra cores is relatively simple. Restart your Spectrum Next/N-go, upon boot press the key 'C' to enter ZX Spectrum Next Extra Cores. There are up to 14 FPGA slots available, listed vertically from numbers 18 to 31. From here, you can enter, erase, and update the extra cores.
 
@@ -169,7 +172,7 @@ NES_GAME
 
 SAMCOUPE
 
-When you have finished flashing all of the extra cores, restart your Spectrum Next in default Next personality.
+When you complete flashing all of the extra cores, restart your Spectrum Next in default Next personality.
 
 Please read QUICKSTART for more information on how to use each of the extra cores, this file is inside each folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI, together with the README file!
  
