@@ -146,6 +146,8 @@ Navigate to the place where you downloaded the distribution and double-click it 
 
 Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
+![FW](https://github.com/DopierRex/OneNext/assets/137646337/441d0937-9587-432f-8e82-33c4bf02b773)
+
 PLEASE NOTE: You need at least core v3.01.10
 READ the instructions carefully at the link above for SYSTEM/NEXT 22.10
 Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. Extra cores require an external PS/2 keyboard, it needs to be enabled! 
@@ -187,6 +189,8 @@ MSX_128K
 NES_GAME
 
 SAMCOUPE
+
+![FLASH](https://github.com/DopierRex/OneNext/assets/137646337/aed2043f-517b-4834-8316-c48169bb71b1)
 
 When you complete flashing all of the cores, restart your Spectrum Next in default Next personality.
 
