@@ -166,9 +166,9 @@ Test that VGA VIDEO and PS/2 KEYBOARD are working for your setup before proceedi
 -STEP 3
 
 Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your first (or only) FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 2). 
-If you get the prompt on your PC screen "The destination already has a file named '....'", click 'yes' to "Replace the file in the destination" for all files.
+If you get any prompt on your PC screen "The destination already has a file named '....'", click to "Replace the file in the destination".
  
-IMPORTANT: The software in this repository does not alter or corrupt the official Spectrum Next firmware or its code; in fact, additional files, folders, are simply added with relevant settings and configurations.
+IMPORTANT: The software in this repository does not alter or corrupt the official Spectrum Next firmware or its code; in fact, additional resources are simply added with relevant settings, files and configurations.
 
 -STEP 4
 
