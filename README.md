@@ -1,4 +1,4 @@
-
+Lo
 OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
@@ -96,9 +96,9 @@ The cores that make it possible to recreate other machines on the Spectrum Next 
 
 IMPORTANT: 
 
-- Use or obtain a PS/2 keyboard that has standard full keyset, including up to 'F12' function key, and 'Scroll Lock' key
+- MUST use or obtain a PS/2 keyboard that has standard complete keyset,'F12' function key, and 'Scroll Lock' key.
   
--Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full keyset PS/2 standard keyboard with PS/2 connector wire. 
+-Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full PS/2 standard keyboard. 
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
@@ -110,7 +110,7 @@ OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way:
 1st 4gb partition in FAT16,
 2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is)
-For example, a 32gb SD card size into 4 partitions: 
+For example, creating 4 partitions from a 32gb SD card:
 1st partition 4gb FAT16, 
 2nd partition 10gb FAT32, 3rd partition 10gb FAT32, 4th partition 8gb FAT32.
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
@@ -143,7 +143,7 @@ https://www.specnext.com/latestdistro
 
 Navigate to the place where you downloaded the distribution and double-click it to unzip. Select all files and copy them to the root folder of the FAT16 4gb SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as in REQUIREMENTS above).
 
-Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next, before proceeding to the next step. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
+Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
 PLEASE NOTE: You need at least core v3.01.10
 READ the instructions carefully at the link above for SYSTEM/NEXT 22.10
@@ -156,7 +156,7 @@ Test that VGA video and PS/2 KEYBOARD are working for your setup before proceedi
 Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your first (or only) FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 2). 
 If you get the prompt on your PC screen "The destination already has a file named '....'", click 'yes' to "Replace the file in the destination" for all files.
  
-IMPORTANT: The software in this repository does not alter, replace, or corrupt the official Spectrum Next firmware or its code; in fact, additional files, folders, are simply added with relevant settings and configurations.
+IMPORTANT: The software in this repository does not alter or corrupt the official Spectrum Next firmware or its code; in fact, additional files, folders, are simply added with relevant settings and configurations.
 
 -STEP 4
 
