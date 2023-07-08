@@ -97,7 +97,7 @@ IMPORTANT:
 
 - MUST use or obtain a PS/2 keyboard that has standard complete keyset, 'F12' function key, and 'Scroll Lock' key.
   
--Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full PS/2 standard keyboard. 
+- Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full PS/2 standard keyboard. 
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
@@ -114,6 +114,7 @@ For example, creating 4 partitions from a 32gb SD card:
 
 1st partition 4gb FAT16, 
 2nd partition 10gb FAT32, 3rd partition 10gb FAT32, 4th partition 8gb FAT32.
+
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
