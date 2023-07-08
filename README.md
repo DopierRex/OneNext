@@ -155,7 +155,9 @@ PLEASE NOTE:
 READ the instructions carefully at the link above for SYSTEM/NEXT 22.10
 
 - Read section 'Note for PS/2 keyboard users' on the official distribution release website listed above.
-  Extra cores require an external PS/2 keyboard, it needs to be enabled! 
+  Extra cores require an external PS/2 keyboard, it needs to be enabled!
+
+![keyboard](https://github.com/DopierRex/OneNext/assets/137646337/d4c3f6f8-cab0-412e-aaec-1eed690c660b)
 
 Test that VGA VIDEO and PS/2 KEYBOARD are working for your setup before proceeding with the next step. 
 
