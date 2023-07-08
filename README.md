@@ -156,7 +156,7 @@ PLEASE NOTE: You need at least core v3.01.10
 READ the instructions carefully at the link above for SYSTEM/NEXT 22.10
 Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. Extra cores require an external PS/2 keyboard, it needs to be enabled! 
 
-Test that VGA video and PS/2 KEYBOARD are working for your setup before proceeding with the next step. 
+Test that VGA VIDEO and PS/2 KEYBOARD are working for your setup before proceeding with the next step. 
 
 -STEP 3
 
