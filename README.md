@@ -91,7 +91,7 @@ The cores that make it possible to recreate other machines on the Spectrum Next 
 
 IMPORTANT: 
 
-- MUST use or obtain a PS/2 keyboard that has standard complete keyset, 'F12' function key, and 'Scroll Lock' key.
+- MUST use or obtain a PS/2 keyboard that has standard complete keyset, 'F12' function key, and 'SCROLL LOCK' key.
   
 - Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full PS/2 standard keyboard. 
 
