@@ -34,8 +34,6 @@ The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 
 -NES, from fpganes ZXUNO port, 2016 DistWave (VGA)
 
-![CONSOLES](https://github.com/DopierRex/OneNext/assets/137646337/26a8523d-a6dd-4e0f-92fa-91d79a0d0d4b)
-
 Additional tools executable from NextZXOS menu are:
 
 -WiFi Off, WiFi switch-off option, by DopierRex
@@ -47,8 +45,6 @@ Additional tools executable from NextZXOS menu are:
 -NextPlayer by perrada69, Miroslav Bursa
 
 -CalmCommander, file commander by perrada69, Miroslav Bursa
-
-![MUSIC](https://github.com/DopierRex/OneNext/assets/137646337/276e59f9-817d-423c-af47-e821fa56918b)
 
 All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included in this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
@@ -114,7 +110,9 @@ For example, creating 4 partitions from a 32gb SD card:
 2nd partition 10gb FAT32, 
 3rd partition 10gb FAT32, 
 4th partition 8gb FAT32. 
-In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
+In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk).
+
+![SD](https://github.com/DopierRex/OneNext/assets/137646337/9197e257-3077-4c0b-b0f3-45d7a0a11479)
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
 
