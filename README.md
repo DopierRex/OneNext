@@ -51,7 +51,7 @@ Additional tools executable from NextZXOS menu are:
 
 ![MUSIC](https://github.com/DopierRex/OneNext/assets/137646337/276e59f9-817d-423c-af47-e821fa56918b)
 
-All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
+All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included in this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
 Please note that Arcades (cores/roms) are NOT included in this repository; at present, arcades are not within scope of the project. If you are interested in arcade cores, you should check out Victor Trucco's fantastic work on his repository 
 https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades
@@ -59,7 +59,7 @@ https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arca
 IMPORTANT:
 OneNext is under the terms of the GNU General Public License by the Free Software Foundation, version 3. The use of resources in this repository is for evaluation and educational purposes; proceed only if you are confident in your abilities, understand and accept the terms herein. Source software is under the terms of respective GNU / CC0 / MIT original projects' licenses. No liability or warrants are attributed to, implied in, or derived from this software. 
 
-None of the extra cores, settings and configurations in OneNext are permanent; they are only set from the SD card files. You can just revert to your old Next build, by simply replacing the SD card with your own previous card, whenever you wish.
+None of the extra cores, settings and configurations in OneNext are permanent; they are only set from files on SD card. You can just revert to your old Next build, by simply replacing the SD card with your own previous card, whenever you wish.
 
 This release and repository do NOT include game roms; you must add your games/roms to respective system folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI. 
 
@@ -70,7 +70,7 @@ Those boards use FPGA Xilinx XC6SLX16
 
 NOTE: SAM COUPÉ extra core needs 2MB RAM expansion for Spectrum Next (ks1) 
 
-The current extra cores are not expected to work on the new Spectrum Next of Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
+The current extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
 YOU WILL NEED:
 
