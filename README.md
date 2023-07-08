@@ -106,16 +106,14 @@ Please do NOT re-use your old or ordinary Next SD card, rather use a new SD card
 Some extra cores will only work with cards up to 4gb maximum; therefore, if you have a larger SD card, you must create a FAT16 4gb primary partition or, even better, split the SD card size into multiple partitions (explained in the following section).
 
 OPTIONAL (recommended):
-You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way:
-1st 4gb partition in FAT16,
+You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way: 1st 4gb partition in FAT16,
 2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is). 
 
-For example, creating 4 partitions from a 32gb SD card. 
-
+For example, creating 4 partitions from a 32gb SD card 
 1st partition 4gb FAT16
 2nd partition 10gb FAT32
 3rd partition 10gb FAT32
-4th partition 8gb FAT32.
+4th partition 8gb FAT32
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
