@@ -1,10 +1,9 @@
-
 OneNext
 
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
 
-A set of alternative cores, settings and additional options from edited NextZXOS menu, it makes a selection of systems possible from the default menu, without having to assign an extra core at boot. 
-OneNext resolves a deal of complexity for the average or casual user, the objective is multicore capability and features from just one SD card.
+Alternative cores, settings and additional options from edited NextZXOS menu, OneNext makes a selection of systems possible from the default menu, without having to assign an extra core at boot. 
+This resolves a deal of complexity for the average or casual user, the objective is multicore capability from one single SD card and a complete setup that works for all extra systems. 
 
 Please be aware this is not an official Spectrum Next distribution package, or associated with SpecNext Ltd. 
 The project is intended to implement open-source resources available for the Spectrum Next, made by third parties, and to provide an integrated setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
@@ -35,8 +34,6 @@ The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 
 -NES, from fpganes ZXUNO port, 2016 DistWave (VGA)
 
-![CONSOLES](https://github.com/DopierRex/OneNext/assets/137646337/26a8523d-a6dd-4e0f-92fa-91d79a0d0d4b)
-
 Additional tools executable from NextZXOS menu are:
 
 -WiFi Off, WiFi switch-off option, by DopierRex
@@ -49,9 +46,7 @@ Additional tools executable from NextZXOS menu are:
 
 -CalmCommander, file commander by perrada69, Miroslav Bursa
 
-![MUSIC](https://github.com/DopierRex/OneNext/assets/137646337/276e59f9-817d-423c-af47-e821fa56918b)
-
-All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included on this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
+All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included in this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
 Please note that Arcades (cores/roms) are NOT included in this repository; at present, arcades are not within scope of the project. If you are interested in arcade cores, you should check out Victor Trucco's fantastic work on his repository 
 https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades
@@ -59,7 +54,7 @@ https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arca
 IMPORTANT:
 OneNext is under the terms of the GNU General Public License by the Free Software Foundation, version 3. The use of resources in this repository is for evaluation and educational purposes; proceed only if you are confident in your abilities, understand and accept the terms herein. Source software is under the terms of respective GNU / CC0 / MIT original projects' licenses. No liability or warrants are attributed to, implied in, or derived from this software. 
 
-None of the extra cores, settings and configurations in OneNext are permanent; they are only set from the SD card files. You can just revert to your old Next build, by simply replacing the SD card with your own previous card, whenever you wish.
+None of the extra cores, settings and configurations in OneNext are permanent; they are only set from files on SD card. You can just revert to your old Next build, by simply replacing the SD card with your own previous card, whenever you wish.
 
 This release and repository do NOT include game roms; you must add your games/roms to respective system folders: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI. 
 
@@ -70,7 +65,7 @@ Those boards use FPGA Xilinx XC6SLX16
 
 NOTE: SAM COUPÉ extra core needs 2MB RAM expansion for Spectrum Next (ks1) 
 
-The current extra cores are not expected to work on the new Spectrum Next of Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
+The current extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
 YOU WILL NEED:
 
@@ -96,26 +91,33 @@ The cores that make it possible to recreate other machines on the Spectrum Next 
 
 IMPORTANT: 
 
-- Use or obtain a PS/2 keyboard that has standard full keyset, including up to 'F12' function key, and 'Scroll Lock' key
+- MUST use or obtain a PS/2 keyboard that has standard complete keyset, 'F12' function key, and 'Scroll Lock' key.
   
--Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT on for Spectrum Next (ks1) for the extra cores, it needs to be a full keyset PS/2 standard keyboard with a PS/2 connector wire. 
+- Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full PS/2 standard keyboard. 
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
-You will need to format a new SD card to FAT16 (not FAT32). 
-Please do NOT re-use your old or ordinary Next SD card, you should definitely use a new SD card specifically for this. 
+You will need to format a SD card to FAT16 (not FAT32). 
+Please do NOT re-use your old or ordinary Next SD card, rather use a new SD card specifically for this. 
 Some extra cores will only work with cards up to 4gb maximum; therefore, if you have a larger SD card, you must create a FAT16 4gb primary partition or, even better, split the SD card size into multiple partitions (explained in the following section).
 
 OPTIONAL (recommended):
-You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way:
-1st 4gb partition in FAT16,
-2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is)
-For example, a 32gb SD card size into 4 partitions: 
+You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way: 1st 4gb partition in FAT16,
+2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is). 
+
+For example, creating 4 partitions from a 32gb SD card: 
 1st partition 4gb FAT16, 
-2nd partition 10gb FAT32, 3rd partition 10gb FAT32, 4th partition 8gb FAT32.
-In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
+2nd partition 10gb FAT32, 
+3rd partition 10gb FAT32, 
+4th partition 8gb FAT32. 
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
+
+![SD](https://github.com/DopierRex/OneNext/assets/137646337/0f919a6d-975b-43e0-9cb7-6a987eb2a8fe)
+
+In this example, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk).
+
+![Next Drives](https://github.com/DopierRex/OneNext/assets/137646337/96b8d278-7769-4ea5-897d-8f4bf799c058)
 
 Games for the extra systems and consoles must be placed on the first NextZXOS 'C' drive (FAT16, 1st SD partition) inside their respective folders: SAM, CPC6128, MSX, NES, COLECO, ATARI, where you can place your own games/roms. 
 Anything else, ZX Spectrum legacy or Next, can be on any drive (C,D,E,F..) because the Spectrum Next has support for FAT16 and FAT32.
@@ -143,20 +145,26 @@ https://www.specnext.com/latestdistro
 
 Navigate to the place where you downloaded the distribution and double-click it to unzip. Select all files and copy them to the root folder of the FAT16 4gb SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as in REQUIREMENTS above).
 
-Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next, before proceeding to the next step. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
+Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
-PLEASE NOTE: You need at least core v3.01.10
+![FW](https://github.com/DopierRex/OneNext/assets/137646337/441d0937-9587-432f-8e82-33c4bf02b773)
+
+PLEASE NOTE: 
+
+- You need at least core v3.01.10
 READ the instructions carefully at the link above for SYSTEM/NEXT 22.10
-Also, you may notice the section 'Note for PS/2 keyboard users' on the official distribution release website listed above. Extra cores require an external PS/2 keyboard, it needs to be enabled! 
 
-Test that VGA video and PS/2 KEYBOARD are working for your setup before proceeding with the next step. 
+- Read section 'Note for PS/2 keyboard users' on the official distribution release website listed above.
+  Extra cores require an external PS/2 keyboard, it needs to be enabled! 
+
+Test that VGA VIDEO and PS/2 KEYBOARD are working for your setup before proceeding with the next step. 
 
 -STEP 3
 
 Download this repository's latest release, navigate to the place you downloaded it, unzip the file, select ALL and copy all files to the root of your first (or only) FAT16 primary partition on the SD card, where you have already placed the System/Next distribution (step 2). 
 If you get the prompt on your PC screen "The destination already has a file named '....'", click 'yes' to "Replace the file in the destination" for all files.
  
-IMPORTANT: The software in this repository does not alter, replace, or corrupt the official Spectrum Next firmware or its code; in fact, additional files, folders, are simply added with relevant settings and configurations.
+IMPORTANT: The software in this repository does not alter or corrupt the official Spectrum Next firmware or its code; in fact, additional files, folders, are simply added with relevant settings and configurations.
 
 -STEP 4
 
@@ -186,6 +194,8 @@ MSX_128K
 NES_GAME
 
 SAMCOUPE
+
+![FLASH](https://github.com/DopierRex/OneNext/assets/137646337/aed2043f-517b-4834-8316-c48169bb71b1)
 
 When you complete flashing all of the cores, restart your Spectrum Next in default Next personality.
 
