@@ -95,7 +95,7 @@ The cores that make it possible to recreate other machines on the Spectrum Next 
 
 IMPORTANT: 
 
-- MUST use or obtain a PS/2 keyboard that has standard complete keyset,'F12' function key, and 'Scroll Lock' key.
+- MUST use or obtain a PS/2 keyboard that has standard complete keyset, 'F12' function key, and 'Scroll Lock' key.
   
 -Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full PS/2 standard keyboard. 
 
@@ -108,8 +108,10 @@ Some extra cores will only work with cards up to 4gb maximum; therefore, if you 
 OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way:
 1st 4gb partition in FAT16,
-2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is)
+2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is). 
+
 For example, creating 4 partitions from a 32gb SD card:
+
 1st partition 4gb FAT16, 
 2nd partition 10gb FAT32, 3rd partition 10gb FAT32, 4th partition 8gb FAT32.
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
