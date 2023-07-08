@@ -108,6 +108,7 @@ Some extra cores will only work with cards up to 4gb maximum; therefore, if you 
 OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way: 1st 4gb partition in FAT16,
 2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is). 
+
 For example, creating 4 partitions from a 32gb SD card: 
 1st partition 4gb FAT16, 
 2nd partition 10gb FAT32, 
