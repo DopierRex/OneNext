@@ -7,6 +7,8 @@ on another board, but I don't have a splitter to test the ZXUNO yet.
 
 Port to ZX Spectrum Next / N-GO by ManuFerHi.
 
+https://github.com/ManuFerHi/N-GO/tree/main/cores/Sam%20Coupe
+
 Keys
 ----
 - F12 - disk menu

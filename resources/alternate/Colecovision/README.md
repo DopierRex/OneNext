@@ -7,6 +7,8 @@
 # colecofpga
 Colecovision FGPA port from old PACE project.
 
+https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Sources/Colecovision
+
 The original project information is here:
 http://members.iinet.net.au/~msmcdoug/pace/Nanoboard/nanoboard.html
 
