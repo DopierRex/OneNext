@@ -97,9 +97,13 @@ IMPORTANT:
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
-You will need to format a SD card to FAT16 (not FAT32). 
+You will need to format a SD card to FAT16 (not FAT32).   
 Please do NOT re-use your old or ordinary Next SD card, rather use a new SD card specifically for this. 
-Some extra cores will only work with cards up to 4gb maximum; therefore, if you have a larger SD card, you must create a FAT16 4gb primary partition or, even better, split the SD card size into multiple partitions (explained in the following section).
+Some extra cores will only work with cards up to FAT16 4gb maximum; therefore, if you have a larger SD card, you MUST resize it to a 4GB primary partition in FAT16 file system or, even better, split the SD card size into multiple partitions (explained in the following section). 
+
+Windows File Explorer does not work for this; there are free programs/tools for Windows, Mac or Linux to create multiple partitions on a single SD card. For example, to name a couple, 'EaseUS Partition Master' free edition for Windows PC or 'GParted' for Linux (amd64, or i686, i686-PAE) https://gparted.org/download.php 
+
+Please choose the proper tool you are comfortable with or do your own research for a suitable method to partition and format your SD card correctly.
 
 OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way: 1st 4gb partition in FAT16,
@@ -124,11 +128,9 @@ Anything else, ZX Spectrum legacy or Next, can be on any drive (C,D,E,F..) becau
 
 You can keep all your files neatly organised, for example: the extensive ZX Spectrum library in drive D, Next games in drive E, music files or your own programs in drive F..
 
-There are many free programs/tools for Windows, Mac or Linux to create multiple partitions on a single SD card. To name a couple, 'EaseUS Partition Master' for Windows PC or 'GParted' for Linux (amd64, or i686, i686-PAE) https://gparted.org/download.php
-
-Please choose the proper tool you are comfortable with or do your own research for a suitable method to partition and format your SD card correctly.
-
 INSTRUCTIONS
+
+Only works from freshly formatted SD card (or 1st partition) as detailed above, and in the following step order: 
 
 -STEP 1 
 
@@ -177,9 +179,9 @@ Now, you will need to FLASH the alternative cores right from the Spectrum Next!
 Using a VGA monitor and the PS/2 keyboard wired, power up your Next/N-go. 
 At this point, the default video is set to VGA 50hz 'mode 0', but if you don't get a satisfactory display on your monitor, you can restart the Spectrum Next/N-go and check again the VGA display frequencies by holding down key 'V' at power up and starting 'Screen Test'. Select a VGA mode you are happy with, from the different modes displayed on your monitor through the screen cycles.
 
-Flashing the extra cores is relatively simple. Restart your Spectrum Next/N-go, upon boot press the key 'C' to enter ZX Spectrum Next Extra Cores. There are up to 14 FPGA slots available, listed vertically from numbers 18 to 31. From here, you can enter, erase, and update the extra cores.
+Flashing the extra cores is relatively simple. Restart your Spectrum Next/N-go, upon boot press the key 'C' to enter ZX Spectrum Next Extra Cores. There are up to 24 slots available, listed vertically from numbers 08 to 31. From here, you can enter, erase, and update the extra cores.
 
-Once you select an empty slot and press 'space', a list of extra cores will appear on the screen. Select any of the available cores and press 'enter' to flash it. Once a core is flashed to a slot, it will no longer show on the list of cores that can be flashed (unless you erase it first). Flashing an extra core actually takes just a few seconds.
+Once you select an empty slot and press 'space', a list of extra cores will appear on the screen. Select any of the available cores and press 'enter' to flash it. Once a core is flashed to a slot, it will no longer show on the list of cores that can be flashed (unless you erase it first). Flashing an extra core actually takes just a few seconds. 
 
 You will need to flash all the extra core, one by one, and ensure they are named as listed hereunder. The slot number doesn't matter; an extra core can be flashed to any of the available slots, from 08 to 31.
 
