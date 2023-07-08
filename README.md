@@ -211,5 +211,7 @@ IMPORTANT: This build and its repository do NOT include game ROMS.
 It is your own prerogative to add games in the relevant folders. 
 Please check README.txt inside each of the extra system directory: SAMCOUPE, CPC6128, MSX, NES, COLECO, ATARI for instructions. 
 
+PLEASE NOTE: when you start Amstrad CCP6128 and SAM COUPE, if your monitor does not give a signal, press the 'SCROLL LOCK' key, this key switches between 15 and 31khz and enables video output. 
+
 Now, you can enjoy extra machines and consoles, switch WiFi off, manage files, or play music.. 
 all from your NextZXOS menu!
