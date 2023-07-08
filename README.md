@@ -98,7 +98,7 @@ IMPORTANT:
 
 - Use or obtain a PS/2 keyboard that has standard full keyset, including up to 'F12' function key, and 'Scroll Lock' key
   
--Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT on for Spectrum Next (ks1) for the extra cores, it needs to be a full keyset PS/2 standard keyboard with a PS/2 connector wire. 
+-Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full keyset PS/2 standard keyboard with PS/2 connector wire. 
 
 4. A FAT16 FORMATTED 4GB SD CARD
 
