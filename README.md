@@ -117,7 +117,7 @@ IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must
 
 In this example, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk).
 
-![MENU CLOSEUP](https://github.com/DopierRex/OneNext/assets/137646337/8fed836c-8afd-4644-985f-baa1b30ffa7f)
+![Next Drives](https://github.com/DopierRex/OneNext/assets/137646337/96b8d278-7769-4ea5-897d-8f4bf799c058)
 
 Games for the extra systems and consoles must be placed on the first NextZXOS 'C' drive (FAT16, 1st SD partition) inside their respective folders: SAM, CPC6128, MSX, NES, COLECO, ATARI, where you can place your own games/roms. 
 Anything else, ZX Spectrum legacy or Next, can be on any drive (C,D,E,F..) because the Spectrum Next has support for FAT16 and FAT32.
