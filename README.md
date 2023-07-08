@@ -3,7 +3,7 @@ OneNext
 Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
 
 Alternative cores, settings and additional options from edited NextZXOS menu, OneNext makes a selection of systems possible from the default menu, without having to assign an extra core at boot. 
-This resolves a deal of complexity for the average or casual user, the objective is multicore capability from just one SD card.
+This resolves a deal of complexity for the average or casual user, the objective is multicore capability from one single SD card and a complete setup that works for all extra systems. 
 
 Please be aware this is not an official Spectrum Next distribution package, or associated with SpecNext Ltd. 
 The project is intended to implement open-source resources available for the Spectrum Next, made by third parties, and to provide an integrated setup. It is mainly for evaluation purposes, with the hope that it will encourage more enthusiasts to explore Spectrum Next-related projects.
@@ -108,8 +108,11 @@ Some extra cores will only work with cards up to 4gb maximum; therefore, if you 
 OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way: 1st 4gb partition in FAT16,
 2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is). 
-
-For example, creating 4 partitions from a 32gb SD card: 1st partition 4gb FAT16 / 2nd partition 10gb FAT32 / 3rd partition 10gb FAT32 / 4th partition 8gb FAT32. 
+For example, creating 4 partitions from a 32gb SD card: 
+1st partition 4gb FAT16 
+2nd partition 10gb FAT32 
+3rd partition 10gb FAT32 
+4th partition 8gb FAT32 
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
