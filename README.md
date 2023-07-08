@@ -109,11 +109,7 @@ OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way: 1st 4gb partition in FAT16,
 2nd, 3rd.. partitions in FAT32, in GB sizes of your choice (depending on how large the SD card is). 
 
-For example, creating 4 partitions from a 32gb SD card 
-1st partition 4gb FAT16
-2nd partition 10gb FAT32
-3rd partition 10gb FAT32
-4th partition 8gb FAT32
+For example, creating 4 partitions from a 32gb SD card: 1st partition 4gb FAT16 / 2nd partition 10gb FAT32 / 3rd partition 10gb FAT32 / 4th partition 8gb FAT32. 
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk). 
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
