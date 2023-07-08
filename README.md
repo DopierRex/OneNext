@@ -112,7 +112,7 @@ For example, creating 4 partitions from a 32gb SD card:
 4th partition 8gb FAT32. 
 In this case, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk).
 
-![SD](https://github.com/DopierRex/OneNext/assets/137646337/9197e257-3077-4c0b-b0f3-45d7a0a11479)
+![SD](https://github.com/DopierRex/OneNext/assets/137646337/0f919a6d-975b-43e0-9cb7-6a987eb2a8fe)
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
 
