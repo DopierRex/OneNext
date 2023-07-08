@@ -12,7 +12,7 @@ The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is a great tutorial on the YouTube channel 'Spectrum Next Stuff' 
 https://www.youtube.com/watch?v=khba0wV743Q&t=6s
 
-![MENU](https://github.com/DopierRex/OneNext/assets/137646337/3edd4b96-0f28-445f-9080-6b74a63a2a08)
+![MENU](https://github.com/DopierRex/OneNext/assets/137646337/e4a66675-98c5-433c-89ff-33ad7437407b)
 
 The extra machines in this build are from several open source projects, made by many authors:
 
@@ -24,7 +24,7 @@ The extra machines in this build are from several open source projects, made by 
 
 -MSX1 by Victor Trucco, based also on previous MSX1FPGA by Fabio Belavenuto (VGA @50/60Hz)
 
-![MACHINES2](https://github.com/DopierRex/OneNext/assets/137646337/661d522f-eeb9-4480-be9e-b250b1b29f5d)
+![MACHINES2](https://github.com/DopierRex/OneNext/assets/137646337/da9084e3-6226-4083-a641-bb0e7d9f7769)
 
 The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
 
@@ -117,11 +117,11 @@ For example, creating 4 partitions from a 32gb SD card:
 
 IMPORTANT: ALL partitions must be PRIMARY, and ONLY the first 4gb partition must be formatted in FAT16, the other partitions (2nd, 3rd..) need to be formatted in FAT32 (!)
 
-![SD](https://github.com/DopierRex/OneNext/assets/137646337/0f919a6d-975b-43e0-9cb7-6a987eb2a8fe)
+![SD](https://github.com/DopierRex/OneNext/assets/137646337/4cd678a4-74ee-4fd6-8e97-c05f80327322)
 
 In this example, NextZXOS will show 5 logical drives C, D, E, F, M (drive 'M' is the RAMdisk).
 
-![Next Drives](https://github.com/DopierRex/OneNext/assets/137646337/96b8d278-7769-4ea5-897d-8f4bf799c058)
+![Next Drives](https://github.com/DopierRex/OneNext/assets/137646337/31bb76f5-3722-4155-a129-84e13b1bdb2a)
 
 Games for the extra systems and consoles must be placed on the first NextZXOS 'C' drive (FAT16, 1st SD partition) inside their respective folders: SAM, CPC6128, MSX, NES, COLECO, ATARI, where you can place your own games/roms. 
 Anything else, ZX Spectrum legacy or Next, can be on any drive (C,D,E,F..) because the Spectrum Next has support for FAT16 and FAT32.
@@ -149,7 +149,7 @@ Navigate to the place where you downloaded the distribution and double-click it 
 
 Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
-![FW](https://github.com/DopierRex/OneNext/assets/137646337/441d0937-9587-432f-8e82-33c4bf02b773)
+![FW](https://github.com/DopierRex/OneNext/assets/137646337/e87ec5f3-ab06-4ebc-81d2-9944ca66f497)
 
 PLEASE NOTE: 
 
@@ -159,7 +159,7 @@ READ the instructions carefully at the link above for SYSTEM/NEXT 22.10
 - Read section 'Note for PS/2 keyboard users' on the official distribution release website listed above.
   Extra cores require an external PS/2 keyboard, it needs to be enabled!
 
-![keyboard](https://github.com/DopierRex/OneNext/assets/137646337/d4c3f6f8-cab0-412e-aaec-1eed690c660b)
+![keyboard](https://github.com/DopierRex/OneNext/assets/137646337/25ed4e76-7a42-4360-a85e-b49b6a881725)
 
 Test that VGA VIDEO and PS/2 KEYBOARD are working for your setup before proceeding with the next step. 
 
@@ -199,7 +199,7 @@ NES_GAME
 
 SAMCOUPE
 
-![FLASH](https://github.com/DopierRex/OneNext/assets/137646337/aed2043f-517b-4834-8316-c48169bb71b1)
+![FLASH](https://github.com/DopierRex/OneNext/assets/137646337/7a31a023-7b23-4726-894d-18d0529cbd80)
 
 When you complete flashing all of the cores, restart your Spectrum Next in default Next personality.
 
