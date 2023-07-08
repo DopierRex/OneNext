@@ -48,7 +48,7 @@ Additional tools executable from NextZXOS menu are:
 
 All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included in this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
-Please note that Arcades (cores/roms) are NOT included in this repository; at present, arcades are not within scope of the project. If you are interested in arcade cores, you should check out Victor Trucco's fantastic work on his repository 
+Please note that arcade cores are not included in this repository. If you are interested in arcades, you should check out Victor Trucco's fantastic work on his repository 
 https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades
 
 IMPORTANT:
