@@ -63,7 +63,7 @@ REQUIREMENTS
 OneNext is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
 Those boards use FPGA Xilinx XC6SLX16
 
-NOTE: SAM COUPÉ extra core needs 2MB RAM expansion for Spectrum Next (ks1) 
+NOTE: SAM COUPÉ extra core needs the 2MB RAM for Next, so it would not work on an unexpanded Spectrum Next (ks1) base model that has only 1024KB RAM. This is not an issue for N-go boards, or any Spectrum Next (ks1) already fitted with 2MB (upgraded or expanded model).
 
 The current extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new N-mini, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
 
