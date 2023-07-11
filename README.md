@@ -1,6 +1,6 @@
 ### OneNext
 
-Add-on set of extra cores, configurations and tools for Spectrum Next (ks1) / N-go
+Add-on set of extra cores, configurations, tools for Spectrum Next (ks1) and N-go
 
 Alternative cores, settings and additional options from edited NextZXOS menu, OneNext makes a selection of systems possible from the default menu, without having to assign an extra core at boot. 
 This resolves a deal of complexity for the average or casual user, the objective is multicore capability from one single SD card and a complete setup that works for all extra systems. 
@@ -20,69 +20,86 @@ This release and repository do NOT include game roms; you must add your games/ro
  
 </details>
 
-The default NextZXOS menu is edited with zxnext-menuedit, kindly created by em00k, David Saphier. 
-Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is a great tutorial on the YouTube channel 'Spectrum Next Stuff' 
-https://www.youtube.com/watch?v=khba0wV743Q&t=6s
+The default NextZXOS menu is edited with [zxnext-menuedit](https://github.com/em00k/zxnext-menuedit), kindly created by em00k, David Saphier. 
+Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is a great tutorial on the YouTube channel [Spectrum Next Stuff](https://www.youtube.com/watch?v=khba0wV743Q&t=6s)
 
 ![MENU](https://github.com/DopierRex/OneNext/assets/137646337/e4a66675-98c5-433c-89ff-33ad7437407b)
 
 The extra machines in this build are from several open source projects, made by many authors:
 
-### SAM Coupé 
-by ManuFehri, based on McLeod's SAM Coupe core (VGA/RGB)
-
-### Amstrad CPC6128 
-port by ManuFehri, based on original AmstradCPC464 work by Miguel Angel Rodriguez Jodar (VGA/RGB)
-
-### BBC Micro Master
-by hoglet67, David Banks, BeebFpga Spec Next Beeb Core, using Alan Daly's 65C02 implementation (VGA/RGB/HDMI @50Hz)
+### SAM Coupé
+[Sam Coupe](https://github.com/ManuFerHi/N-GO/tree/main/cores/Sam%20Coupe) by ManuFehri, based on McLeod's SAM Coupe core (VGA/RGB)
 
 ### MSX
-by Victor Trucco, based also on previous MSX1FPGA by Fabio Belavenuto (VGA @50/60Hz)
+[MSX1](https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Sources/MSX1) by Victor Trucco, based also on previous MSX1FPGA by Fabio Belavenuto (VGA @50/60Hz)
+
+### Amstrad CPC6128 
+[AmstradCPC](https://github.com/ManuFerHi/N-GO/tree/main/cores/AmstradCPC) port by ManuFehri, based on original AmstradCPC464 work by Miguel Angel Rodriguez Jodar (VGA/RGB)
+
+### BBC Micro Master
+by hoglet67, David Banks, [BeebFpga](https://github.com/hoglet67/BeebFpga), using Alan Daly's 65C02 implementation (VGA/RGB/HDMI @50Hz)
+
 
 ![MACHINES2](https://github.com/DopierRex/OneNext/assets/137646337/da9084e3-6226-4083-a641-bb0e7d9f7769)
 
-The following consoles are all ports to the ZX Spectrum Next by Victor Trucco:
+
+The following consoles are ports for the ZX Spectrum Next by [Victor Trucco](https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores):
 
 ### ATARI 2600
-port of the A2601 FPGA implementation for the ZXUNO (VGA)
+port of the A2601 FPGA implementation for the ZXUNO
 
-### Colecovisio
-FGPA port based from old PACE project (VGA)
+### Colecovision
+FGPA port based from old PACE project 
 
 ### NES
-from fpganes ZXUNO port, 2016 DistWave (VGA)
+from fpganes ZXUNO port, 2016 DistWave
 
 ### Additional tools 
-executable from NextZXOS menu are:
+executable from NextZXOS menu:
 
--WiFi Off, WiFi switch-off option, by DopierRex
+WiFi Off, WiFi switch-off option, by DopierRex
 
--NextSIDPlayer by em00k, David Saphier
+[NextSIDPlayer](https://github.com/em00k/NextSID/tree/main) by em00k, David Saphier
 
--NXMODPlayer by em00k, David Saphier
+[NXMODPlayer](https://github.com/em00k/NXModPlayer) by em00k, David Saphier
 
--NextPlayer by perrada69, Miroslav Bursa
+[NextPlayer by perrada69](https://github.com/perrada69/NextPlayer), by Miroslav Bursa
 
--CalmCommander, file commander by perrada69, Miroslav Bursa
+[CalmCommander](https://github.com/perrada69/CalmCommander/releases), file manager by perrada69, Miroslav Bursa
 
 All credits are attributed to the original authors of the above ports, utilities, and tools. Licences, original source code, and relevant links are included in this repository. You are encouraged to learn about the awesome projects of the creators by checking their main repositories and extensive work.
 
-Please note that arcade cores are not included in this repository. If you are interested in arcades, you should check out Victor Trucco's fantastic work on his repository 
-https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades
+<details> 
+
+<summary>Arcade cores not included </summary>
+
+Please note that arcade cores are not included in this repository. If you are interested in arcades, you should check out Victor Trucco's fantastic work on his [repository](https://gitlab.com/victor.trucco/zx-spectrum-next-cores/-/tree/master/Cores/Arcades) 
+
+</details>
 
 ### Requirements
 
-OneNext is for the SPECTRUM NEXT (ks1 only) and the fantastic N-GO, a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team https://www.specnext.com/about/  https://manuferhi.com/p/n-go-board
-Those boards use FPGA Xilinx XC6SLX16
+OneNext is for the [Spectrum Next](https://www.specnext.com/about/) and the fantastic [N-Go](https://manuferhi.com/p/n-go-board), a clone of the Spectrum Next (Issue 2F) by ManuFehri, authorised by the Spectrum Next team. The FPGA device is Xilinx XC6SLX16.
 
-NOTE: SAM Coupé core needs the 2MB RAM for Next, so it would not work on an unexpanded Spectrum Next (ks1) base model that has only 1024KB RAM. This is not an issue for N-go boards, or any Spectrum Next (ks1) already fitted with 2MB (upgraded or expanded model).
+<details>
 
-The current extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new Xberry-Pi, a Raspberry PI-sized Spectrum Next clone by Don Superfo.
+<summary>Spectrum Next Kickstarter 2 (ks2) and Xberry-Pi</summary>
+
+The current extra cores are not expected to work on the new Spectrum Next Kickstarter 2 (ks2), as the FPGA logic device is different from the one used in Kickstarter 1 (ks1). Hopefully, third-party developers or the Spectrum Next team will create extra cores or adapt the existing ones to the Spectrum Next Kickstarter 2. OneNext has not been tested yet on the new Xberry-Pi, a Raspberry Pi-sized Spectrum Next clone by Don Superfo.
+ 
+</details>
+
+<details>
+
+ <summary>SAM Coupé</summary>
+ 
+NOTE: SAM Coupé core needs the Next 2MB RAM, so it would not work on an unexpanded Spectrum Next (ks1) base model with only 1024KB RAM. This is not an issue for N-go boards, or any Spectrum Next (ks1) already fitted with 2MB
+ 
+</details>
 
 ### You will need:
 
-### 1. A VGA Monitor 
+### 1. VGA Monitor 
 
 Check your VGA monitor/TV boot menu to see how you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core does support digital display (HDMI/DVI).
 However, ALL extra cores work with VGA video. 
@@ -91,7 +108,7 @@ a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally
 
 Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles. Depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
 
-For more information, please refer to the official Sinclair ZX Spectrum Next User Manual, 'Chapter 1: Setting it UP', also available online at https://www.specnext.com/zx-spectrum-next-user-manual-first-edition/
+For more information, please refer to the official Sinclair ZX Spectrum Next User Manual, 'Chapter 1: Setting it UP', also available [online](https://www.specnext.com/zx-spectrum-next-user-manual-first-edition/)
 
 ### 2. Speakers
 
@@ -109,15 +126,21 @@ IMPORTANT:
 
 - Using a USB Keyboard with PS/2 adapter or a Y-splitter cable will NOT work on Spectrum Next (ks1) for the extra cores, it needs to be a full PS/2 standard keyboard. 
 
-### 4. A FAT16 Formatted 4GB SD Card
+### 4. FAT16 Formatted 4GB SD Card
 
 You will need to format a SD card to FAT16 (not FAT32).   
 Please do NOT re-use your old or ordinary Next SD card, rather use a new SD card specifically for this. 
 Some extra cores will only work with cards up to FAT16 4gb maximum; therefore, if you have a larger SD card, you MUST resize it to a 4GB primary partition in FAT16 file system or, even better, split the SD card size into multiple partitions (explained in the following section). 
 
-Windows File Explorer does not work for this; there are free programs/tools for Windows, Mac or Linux to create multiple partitions on a single SD card. For example, to name a couple, 'EaseUS Partition Master' free edition for Windows PC or 'GParted' for Linux (amd64, or i686, i686-PAE) https://gparted.org/download.php 
+<details>
+
+<summary>Formatting and Partitioning </summary>
+
+Windows File Explorer does not work for this; there are free programs/tools for Windows, Mac or Linux to create multiple partitions on a single SD card. For example, to name a couple, [EaseUS Partition Master](https://www.easeus.com/partition-manager/epm-free.html) free edition for Windows PC or [GParted](https://gparted.org/download.php) for Linux (amd64, or i686, i686-PAE)
 
 Please choose the proper tool you are comfortable with or do your own research for a suitable method to partition and format your SD card correctly.
+
+</details>
 
 OPTIONAL (recommended):
 You can actually have multiple drives on NextZXOS (no need for external drives or additional SD cards) by partitioning a new SD card in this way: 1st 4gb partition in FAT16,
@@ -146,7 +169,7 @@ You can keep all your files neatly organised, for example: the extensive ZX Spec
 
 Only works from freshly formatted SD card (or 1st partition) as detailed above, and in the following step order: 
 
-### -STEP 1 
+### STEP 1 
 
 On your new FAT16 4gb SD card, the first file that you must copy is a standard single BEEB.MMB file; this is required for the modern SD Card File System MMFS, which is used by the BeebFpga core. Download it from hoglet67 on GitHub:  
 https://github.com/hoglet67/BeebFpga/releases/download/specnext_beta1/BEEB.MMB.zip 
@@ -159,7 +182,7 @@ The resources on this repository do NOT include the official System/Next distrib
 
 https://www.specnext.com/latestdistro
 
-Navigate to the place where you downloaded the distribution and double-click it to unzip. Select all files and copy them to the root folder of the FAT16 4gb SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as in REQUIREMENTS above).
+Navigate to the place where you downloaded the distribution and double-click it to unzip. Select all files and copy them to the root folder of the FAT16 4gb SD card (or the first FAT16 4gb partition, if you have opted to have multiple drives in NextZXOS, as in 'Requirements' above).
 
 Now, please check out your official NextZXOS distribution by inserting the new SD card in the Spectrum Next. Remember that a 'Screen Test' will be enabled at your first start up (press 'V' VGA, 'R' RGB, 'D' Digital, 'A' ALL).
 
