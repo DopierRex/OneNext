@@ -23,6 +23,8 @@ This release and repository do NOT include game roms; you must add your games/ro
 The default NextZXOS menu is edited with [zxnext-menuedit](https://github.com/em00k/zxnext-menuedit), kindly created by em00k, David Saphier. 
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is a great tutorial on the YouTube channel [Spectrum Next Stuff](https://www.youtube.com/watch?v=khba0wV743Q&t=6s)
 
+![Edited Menu](https://github.com/DopierRex/OneNext/assets/137646337/3ea5f9c0-8e6a-4d1b-ba9f-f4642505ba70)
+
 ![MENU](https://github.com/DopierRex/OneNext/assets/137646337/e4a66675-98c5-433c-89ff-33ad7437407b)
 
 The extra machines in this build are from several open source projects, made by many authors:
@@ -103,7 +105,7 @@ NOTE: SAM Coupé core needs the Next 2MB RAM, so it would not work on an unexpan
 
 Check your VGA monitor/TV boot menu to see how you can adjust horizontal and vertical settings, for the video output to be centred on the screen. Although some of the alternative cores (SAM Coupe, Amstrad CPC6128, BBC Master) can also be displayed in RGB, only the BBC Master core does support digital display (HDMI/DVI).
 However, ALL extra cores work with VGA video. 
-A VGA monitor is ideal for the extra cores and it can be obtained inexpensively; 
+A VGA monitor is ideal for the extra cores and it can be obtained inexpensively (4:3 50Hz); 
 a second-hand VGA monitor would normally cost a few dollars/pounds. Additionally, VGA 50hz, mode 0, is the most timing-accurate for the Spectrum Next, as it is fully compatible with older ZX Spectrum software.
 
 Once you have a VGA monitor connected, please check your VGA display frequencies with the Next 'Screen Test' by holding down key 'V' at power up. Screen Test will go through different mode cycles. Depending on your monitor, select 'mode 0' whenever possible, or another 50hz VGA mode. Otherwise, just select any VGA mode you are satisfied with (50/60hz).
@@ -112,7 +114,7 @@ For more information, please refer to the official Sinclair ZX Spectrum Next Use
 
 ### 2. Speakers
 
-If your VGA monitor does not have built-in speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, a simple set of speakers would be inexpensive to obtain, likely you might have speakers that can be used already. Consider also using a good amplified stereo system or speakers for the fantastic sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
+If your VGA monitor does not have in-line audio and speakers, you will need to use external speakers connected to the Spectrum Next/N-go 3.5mm audio output. As for the VGA monitor above, a simple set of speakers would be inexpensive to obtain, likely you might have speakers that can be used already. Consider also using a good amplified stereo system or speakers for the fantastic sound of the Spectrum Next: NextSound (3 x AY-3-89xx compatible PSGs and PCM digital audio with stereo output), and Covox/Soundrive/SpecDrum/TurboSound digital audio.
 Moreover, NextSIDPlayer and NXMODPlayer by the legendary David Saphier let you play SID like sounds and Amiga MOD files, while NextPlayer by Miroslav Bursa plays STC, PT2, PT3, SQT and TS (TurboSound) music files! 
 
 ### 3. PS/2 Keyboard
