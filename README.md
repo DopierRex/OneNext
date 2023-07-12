@@ -20,10 +20,10 @@ This release and repository do NOT include game roms; you must add your games/ro
  
 </details>
 
+![Edited Menu](https://github.com/DopierRex/OneNext/assets/137646337/3ea5f9c0-8e6a-4d1b-ba9f-f4642505ba70)
+
 The default NextZXOS menu is edited with [zxnext-menuedit](https://github.com/em00k/zxnext-menuedit), kindly created by em00k, David Saphier. 
 Anyone can learn how to use this amazing tool and customise the default NextZXOS menu. There is a great tutorial on the YouTube channel [Spectrum Next Stuff](https://www.youtube.com/watch?v=khba0wV743Q&t=6s)
-
-![Edited Menu](https://github.com/DopierRex/OneNext/assets/137646337/3ea5f9c0-8e6a-4d1b-ba9f-f4642505ba70)
 
 ![MENU](https://github.com/DopierRex/OneNext/assets/137646337/e4a66675-98c5-433c-89ff-33ad7437407b)
 
